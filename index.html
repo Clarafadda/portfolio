@@ -32,24 +32,29 @@
 
       <!-- Navigation -->
       <nav class="hidden md:flex gap-8 text-sm font-medium">
-        <a href="#projets" class="hover:text-poudre transition">Projets</a>
-        <a href="#competences" class="hover:text-poudre transition">Compétences</a>
-        <a href="#parcours" class="hover:text-poudre transition">Parcours</a>
-        <a href="#contact" class="hover:text-poudre transition">Contact</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <!-- Bouton menu mobile -->
-<button id="menu-btn" class="md:hidden text-marine focus:outline-none">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-    </button>
+      <button id="menu-btn" class="md:hidden text-marine focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      </button>
     </div>
-    </header>
+  </header>
     
     
     <!-- Menu mobile -->
     <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium">
+    <a href="#accueil"class="hover:text-poudre">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Logo Clara Fadda" class="h-10 w-auto" />
+      </div>
+    </a>
     <a href="#projets" class="hover:text-poudre">Projets</a>
     <a href="#competences" class="hover:text-poudre">Compétences</a>
     <a href="#parcours" class="hover:text-poudre">Parcours</a>
@@ -70,7 +75,7 @@
   </header>
 
   <!-- HERO / ACCUEIL -->
-  <section class="min-h-screen flex items-center justify-center px-6 pt-32">
+  <section id="accueil" class="min-h-screen flex items-center justify-center px-6 pt-32">
     <div class="max-w-4xl text-center">
       <h1 class="text-4xl md:text-6xl font-bold mb-6">
         Clara Fadda
@@ -96,6 +101,112 @@
       </div>
     </div>
   </section>
+
+  <section id="projets" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center">Projets</h2>
+  
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Carte projet -->
+        <div class="border rounded-2xl p-6 hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">Équation de la chaleur 2D</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Résolution numérique par schéma explicite.
+          </p>
+          <span class="text-xs bg-poudre px-3 py-1 rounded-full">Python</span>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- COMPÉTENCES -->
+<section id="competences" class="py-24 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Compétences</h2>
+  
+  
+    <div class="grid md:grid-cols-2 gap-12">
+   <!-- Techniques -->
+    <div>
+      <h3 class="text-xl font-semibold mb-6">Techniques</h3>
+      <ul class="space-y-4">
+        <li>Modélisation mathématique & simulation numérique</li>
+        <li>Algorithmique et structures de données</li>
+        <li>Graphes et plus courts chemins</li>
+        <li>Simulation multi-agents & systèmes complexes</li>
+      </ul>
+    </div>
+  
+  
+    <!-- Outils -->
+    <div>
+      <h3 class="text-xl font-semibold mb-6">Outils & technologies</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-full bg-poudre text-sm">Python</span>
+        <span class="px-4 py-2 rounded-full bg-poudre text-sm">C#</span>
+        <span class="px-4 py-2 rounded-full bg-poudre text-sm">Git / GitHub</span>
+        <span class="px-4 py-2 rounded-full bg-poudre text-sm">VS Code</span>
+        <span class="px-4 py-2 rounded-full bg-poudre text-sm">Excel</span>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours" class="py-24 px-6 scroll-mt-32">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Parcours</h2>
+
+
+    <div class="space-y-10">
+      <div>
+        <span class="text-sm text-gray-500">2023 – Aujourd’hui</span>
+        <h3 class="font-semibold">Cycle ingénieur</h3>
+        <p class="text-gray-600">Spécialisation en modélisation, simulation et systèmes complexes.</p>
+      </div>
+
+
+      <div>
+        <span class="text-sm text-gray-500">2022 – 2023</span>
+        <h3 class="font-semibold">Stage / projets académiques</h3>
+        <p class="text-gray-600">Développement de projets en algorithmique, graphes et simulation.</p>
+      </div>
+
+
+      <div>
+        <span class="text-sm text-gray-500">2020 – 2022</span>
+        <h3 class="font-semibold">Formation scientifique</h3>
+        <p class="text-gray-600">Bases solides en mathématiques, informatique et physique.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 bg-gray-50 scroll-mt-32">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+    <p class="text-gray-600 mb-12">
+      Une question, un projet, une opportunité ? N’hésite pas à me contacter.
+    </p>
+
+
+    <div class="flex flex-col items-center gap-6">
+      <a href="mailto:clara.fadda@email.com"
+        class="px-8 py-3 rounded-full bg-marine text-white hover:bg-poudre hover:text-marine transition">
+        M’envoyer un email
+      </a>
+
+
+      <div class="flex gap-6 text-sm">
+        <a href="#" class="hover:text-poudre">LinkedIn</a>
+        <a href="#" class="hover:text-poudre">GitHub</a>
+        <a href="assets/CV Clara FADDA.pdf" class="hover:text-poudre">Télécharger mon CV</a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="py-8 text-center text-sm text-gray-500">
