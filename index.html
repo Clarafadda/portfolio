@@ -37,47 +37,48 @@
         <a href="english.html" class="ml-4 px-4 py-2 border border-marine/20 rounded-full hover:bg-marine hover:text-white transition-all text-xs">EN</a>
       </nav>
   
-      <button id="menu-btn" class="md:hidden text-marine p-2 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      <!-- Bouton menu mobile -->
+      <button id="menu-btn" class="md:hidden text-marine focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-      </button>
-    </div>
-  
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-8 text-2xl font-bold text-marine">
-      <button id="close-btn" class="absolute top-8 right-8 text-marine">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-         </svg>
-      </button>
-      <a href="#parcours" class="hover:text-poudre transition-colors mobile-link">Parcours</a>
-      <a href="#projets" class="hover:text-poudre transition-colors mobile-link">Projets</a>
-      <a href="#competences" class="hover:text-poudre transition-colors mobile-link">Compétences</a>
-      <a href="#contact" class="hover:text-poudre transition-colors mobile-link">Contact</a>
-      <a href="english.html" class="mt-4 text-sm border border-marine px-8 py-3 rounded-full">English Version</a>
+        </button>
+      </div>
+    </header>
+      
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium">
+      <a href="#parcours" class="mobile-link hover:text-poudre">Parcours</a>
+      <a href="#projets" class="mobile-link hover:text-poudre">Projets</a>
+      <a href="#competences" class="mobile-link hover:text-poudre">Compétences</a>
+      <a href="#contact" class="mobile-link hover:text-poudre">Contact</a>
     </div>
   </header>
   
-  <script>
+<script>
     const btn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-btn');
     const menu = document.getElementById('mobile-menu');
     const links = document.querySelectorAll('.mobile-link');
   
-    // Ouvrir / Fermer
+    // Fonction pour basculer le menu
     const toggleMenu = () => {
       menu.classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden'); // Empêche le scroll quand le menu est ouvert
+      document.body.classList.toggle('overflow-hidden');
     };
   
+    // Click sur le bouton burger
     btn.addEventListener('click', toggleMenu);
-    closeBtn.addEventListener('click', toggleMenu);
   
-    // Fermer le menu quand on clique sur un lien
+    // Fermer le menu quand on clique sur n'importe quel lien du menu mobile
     links.forEach(link => {
-      link.addEventListener('click', toggleMenu);
+      link.addEventListener('click', () => {
+        // On vérifie si le menu est ouvert avant de le fermer
+        if (!menu.classList.contains('hidden')) {
+          toggleMenu();
+        }
+      });
     });
-  </script>
+</script>
 
   <!-- HERO / ACCUEIL -->
   <section id="accueil" class="min-h-screen flex items-center justify-center px-6 pt-32">
