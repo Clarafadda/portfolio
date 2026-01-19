@@ -161,7 +161,7 @@
           
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/Logo_esilv.png"  
                    alt="Logo ESILV"
                    class="w-full h-full object-contain"
@@ -175,7 +175,7 @@
         <div class="relative grid md:grid-cols-2 gap-8 items-center">
           <!-- Logo droite (desktop) -->
           <div class="hidden md:flex justify-end items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/logo-emlv.png"  
                    alt="Logo EMLV"
                    class="w-full h-full object-contain"
@@ -214,7 +214,7 @@
 
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/Logo_Uvic.jpg"  
                    alt="Logo UVic"
                    class="w-full h-full object-contain"
@@ -227,7 +227,7 @@
         <div class="relative grid md:grid-cols-2 gap-8 items-center">
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex justify-end items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/Logo_VII.jpg"  
                    alt="Logo VII"
                    class="w-full h-full object-contain"
@@ -266,7 +266,7 @@
           
           <!-- Logo droite (desktop) -->
           <div class="hidden md:flex items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/LOGO-Slide-SESSION-PNG.png"  
                    alt="Logo Slide"
                    class="w-full h-full object-contain"
@@ -279,7 +279,7 @@
         <div class="relative grid md:grid-cols-2 gap-8 items-center">
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex justify-end items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/Logo_avenir_apei.jpg"  
                    alt="Logo Avenir APEI"
                    class="w-full h-full object-contain"
@@ -318,7 +318,7 @@
           
           <!-- Logo droite (desktop) -->
           <div class="hidden md:flex items-center">
-            <div class="w-24 h-24 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
+            <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-lg mr-8 overflow-hidden p-2">
               <img src="assets/Logo_esilv.png"  
                    alt="Logo ESILV"
                    class="w-full h-full object-contain"
@@ -333,24 +333,180 @@
 </section>
 
 
+<!-- Projets -->
+<section id="projets" class="py-24 px-6 bg-white scroll-mt-32">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">Projets Réalisés</h2>
+    
+    <div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
+      <button class="filter-btn active px-6 py-2 rounded-full border border-marine bg-marine text-white transition" data-filter="all">Tous</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="ai">IA & Creative Tech</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="product">Product & Hardware</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="data">Data & Software</button>
+    </div>
 
-
-  <section id="projets" class="py-24 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-12 text-center">Projets</h2>
-  
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Carte projet -->
-        <div class="border rounded-2xl p-6 hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">Équation de la chaleur 2D</h3>
-          <p class="text-sm text-gray-600 mb-4">
-            Résolution numérique par schéma explicite.
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="product">
+        <div class="h-48 bg-gray-200 relative overflow-hidden">
+           <div class="absolute inset-0 bg-gradient-to-tr from-marine to-poudre opacity-50"></div>
+           <span class="absolute bottom-4 left-4 bg-white px-3 py-1 text-xs font-bold rounded-full">Jan - Juin 2025</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Oksi Smartwatch</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+            Montre intelligente pour coureurs. Conception UX/UI complète, modélisation 3D du boîtier et intégration de l'électronique embarquée[cite: 43].
           </p>
-          <span class="text-xs bg-poudre px-3 py-1 rounded-full">Python</span>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Figma</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Électronique</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Impression 3D</span>
+          </div>
         </div>
       </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
+        <div class="h-48 bg-gray-800 relative">
+           <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-black opacity-80"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Éditeur de scènes 3D</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Développement d'un éditeur interactif utilisant le Raymarching. Programmation graphique avancée sur navigateur[cite: 39].
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">WebGPU</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">WGSL</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Computer Graphics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="product">
+        <div class="h-48 bg-orange-100 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Campagne Quickstarter</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Lancement d'un portefeuille en cuir français plié façon origami. Gestion de campagne de crowdfunding de A à Z[cite: 41, 42].
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Marketing</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Design Produit</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Kickstarter</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
+        <div class="h-48 bg-gray-900 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Digit Recognition (MNIST)</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Reconnaissance de chiffres manuscrits en temps réel via un réseau de neurones (MLP/CNN) accéléré par WebGPU[cite: 38].
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Python</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Deep Learning</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">CNN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="data">
+        <div class="h-48 bg-blue-50 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">TransConnect Logistics</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Application de gestion de système de livraison. Utilisation de la théorie des graphes pour l'optimisation des trajets.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">C#</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">SQL</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Algorithmes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="product">
+        <div class="h-48 bg-green-50 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Collection "Maker" (HMAA)</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Série de projets hardware : Gameboy soudée main, modification vidéo VGAX, flûte de pan imprimée 3D.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Soudure</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Arduino/C++</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Prototypage</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
+        <div class="h-48 bg-indigo-50 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Rédacteur Multi-Agents LLM</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Architecture multi-agents pour la rédaction automatique de revues de littérature scientifique[cite: 40].
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">NLP</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">LLM</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="data">
+        <div class="h-48 bg-red-50 relative"></div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Airbnb Price Prediction</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Analyse de données et modèle prédictif pour l'estimation des prix de location.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Data Science</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Python</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Pandas</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>  
+  </div>
+</section>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Retirer la classe active de tous les boutons
+      filterBtns.forEach(b => {
+          b.classList.remove('bg-marine', 'text-white');
+          b.classList.add('text-marine');
+      });
+      // Ajouter la classe active au bouton cliqué
+      btn.classList.remove('text-marine');
+      btn.classList.add('bg-marine', 'text-white');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+          card.style.display = 'block';
+          // Petit effet d'animation
+          setTimeout(() => card.style.opacity = '1', 50);
+        } else {
+          card.style.display = 'none';
+          card.style.opacity = '0';
+        }
+      });
+    });
+  });
+</script>  
+
 
   <!-- COMPÉTENCES -->
 <section id="competences" class="py-24 px-6 bg-gray-50">
