@@ -366,43 +366,49 @@
 
       <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"           data-category="ai"
            data-title="Rédacteur Multi-Agents LLM"
-           data-tags="NLP,LLM,Python,LangChain"
+           data-tags="NLP,LLM,WebLLM,Transformers.js, UI/UX"
            data-github="https://github.com/Clarafadda/LLM-Research-Assistant/" 
            data-demo="https://clarafadda.github.io/LLM-Research-Assistant/"
            data-desc="Architecture autonome pour la rédaction de revues de littérature scientifique."
-           data-full-desc="Développement d'une architecture complexe utilisant plusieurs agents autonomes (LLM). Un agent 'Chercheur' extrait les données via API (ArXiv, etc.), un agent 'Synthétiseur' structure l'information, et un agent 'Éditeur' affine le style scientifique. Ce projet explore les limites de l'IA générative dans le domaine académique pour automatiser la veille technologique."
+           data-full-desc="Développement d'une architecture complexe utilisant plusieurs agents autonomes (LLM) conçu pour l'analyse automatisée de la littérature et des documents. Cette application utilise la génération augmentée par la récupération (RAG) pour fournir des réponses basées exclusivement sur les documents PDF téléchargés."
            data-image="assets/Image Agent LLM.png">
         <div class="h-48 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
           <img src="assets/Image Agent LLM.png" alt="AI Agents" class="project-image group-hover:scale-110 transition-transform duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2 text-marine">Rédacteur Multi-Agents LLM</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Architecture autonome pour la rédaction de revues de littérature scientifique.</p>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Assistant de recherche IA entièrement basé sur navigateur pour la rédaction d'états de l'art.</p>
           <div class="flex flex-wrap gap-2">
             <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">NLP</span>
             <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">LLM</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebLLM</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Transformer.js</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
           </div>
         </div>
       </div>
 
       <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
            data-category="ai"
-           data-title="Digit Recognition"
-           data-tags="Deep Learning,WebGPU,CNN,Python"
+           data-title="Classification de chiffres – DL"
+           data-tags="Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU"
            data-github="https://github.com/Clarafadda/TinyGrad_MNIST_Classifier"
            data-demo="https://clarafadda.github.io/TinyGrad_MNIST_Classifier/"
            data-desc="Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU."
-           data-full-desc="Implémentation d'un réseau de neurones convolutif (CNN) entraîné sur le dataset MNIST. La particularité du projet réside dans l'inférence en temps réel dans le navigateur, accélérée par la technologie WebGPU pour des performances natives sans serveur backend lourd."
+           data-full-desc="Ce projet permet la reconnaissance en temps réel de chiffres manuscrits à l'aide de TinyGrad, un framework de deep learning (DL), et le déploie sous forme d'application web basée sur WebGPU. Tinygrad est entraîné avec un réseau de neurone MLP et CNN sur l'ensemble de données MNIST. Une étude des hyperparamètres a été réalisée pour déterminer les plus performants."
            data-image="assets/Image Classifier.png">
         <div class="h-48 bg-gray-900 relative border-b border-gray-100 overflow-hidden">
           <img src="assets/Image Classifier.png" alt="MNIST Digits" class="project-image group-hover:scale-110 transition-transform duration-500">
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Digit Recognition</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU.</p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Classification de chiffres - DL</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Reconnaissance de chiffres manuscrits en temps réel par deep learning et déploiement avec WebGPU.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Deep Learning</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">MLP</span>
             <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">CNN</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Tinygrad</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
           </div>
         </div>
       </div>
@@ -410,21 +416,23 @@
       <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
            data-category="ai"
            data-title="Éditeur de Scènes 3D"
-           data-tags="WGSL,Computer Graphics,Maths,Shaders"
+           data-tags="Computer Graphics,WGSL,Shaders,WebGPU, UI/UX"
            data-github="https://github.com/Clarafadda/Ray_Marching_Editor"
            data-demo="https://clarafadda.github.io/Ray_Marching_Editor/"
            data-desc="Moteur de rendu et éditeur interactif basé sur le Raymarching."
-           data-full-desc="Conception d'un moteur de rendu 3D basé non pas sur des polygones classiques, mais sur des fonctions mathématiques de distance (SDF) et l'algorithme de Raymarching. Écrit en WGSL pour le WebGPU, l'éditeur permet de composer des scènes complexes et fractales en temps réel."
+           data-full-desc="Ce projet est un éditeur de scène 3D interactif basé sur WebGPU, utilisant le ray marching et des fonctions de distance signée (SDF) pour le rendu procédural en temps réel. Il permet la création de scènes à partir de primitives 3D et la modification simultanée du code shader WGSL."
            data-image="assets/Image Raymarching.png">
         <div class="h-48 bg-gray-800 relative border-b border-gray-100 overflow-hidden">
           <img src="assets/Image Raymarching.png" alt="3D Graphics" class="project-image group-hover:scale-110 transition-transform duration-500">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2 text-marine">Éditeur de Scènes 3D</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Moteur de rendu et éditeur interactif basé sur le Raymarching.</p>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Éditeur de scène 3D interactif par ray marching, avec une interface de configuration des objets.</p>
           <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Computer Graphics</span>
             <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WGSL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Graphics</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
+            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
           </div>
         </div>
       </div>
@@ -772,7 +780,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">NLP</span>
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">CNN</span>
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">MLP</span>
-              <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">TensorFlow</span>
+              <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">Tinygrad</span>
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">Scikit-learn</span>
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">NumPy</span>
               <span class="px-3 py-1 bg-poudre/30 text-marine rounded-full text-xs font-medium">Pandas</span>
