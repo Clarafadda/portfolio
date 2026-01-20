@@ -350,198 +350,360 @@
 
 <!-- Projets -->
 <section id="projets" class="py-24 px-6 bg-white scroll-mt-32">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">Projets Réalisés</h2>
-    
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-16 text-center">
+      <h2 class="text-4xl font-bold text-marine mb-4">Projets Réalisés</h2>
+    </div>
+
     <div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
-      <button class="filter-btn active px-6 py-2 rounded-full border border-marine bg-marine text-white transition" data-filter="all">Tous</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="ai">IA & Creative Tech</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="product">Product & Hardware</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition" data-filter="data">Data & Software</button>
+      <button class="filter-btn active px-6 py-2 rounded-full border border-marine bg-marine text-white transition-all shadow-md hover:shadow-lg" data-filter="all">Tous</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="ai">IA & Creative Tech</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="product">Product & Hardware</button>
+      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="data">Data & Software</button>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
-        <div class="h-48 bg-indigo-50 relative border-b border-gray-100">
-           <div class="absolute inset-0 flex items-center justify-center text-4xl opacity-20">🤖📚</div>
+
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100" 
+           data-category="ai"
+           data-title="Rédacteur Multi-Agents LLM"
+           data-tags="NLP,LLM,Python,LangChain"
+           data-github="https://github.com/Clarafadda" 
+           data-desc="Architecture autonome pour la rédaction de revues de littérature scientifique."
+           data-full-desc="Développement d'une architecture complexe utilisant plusieurs agents autonomes (LLM). Un agent 'Chercheur' extrait les données via API (ArXiv, etc.), un agent 'Synthétiseur' structure l'information, et un agent 'Éditeur' affine le style scientifique. Ce projet explore les limites de l'IA générative dans le domaine académique pour automatiser la veille technologique."
+           data-image-color="bg-indigo-50" 
+           data-emoji="🤖📚">
+        <div class="h-48 bg-indigo-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🤖
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Rédacteur Multi-Agents LLM</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Architecture multi-agents autonomes pour la rédaction automatique d'états de l'art et de revues de littérature scientifique.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Rédacteur Multi-Agents</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Architecture autonome pour la rédaction de revues de littérature scientifique.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">NLP</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">LLM</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Python</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">NLP</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">LLM</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
-        <div class="h-48 bg-gray-900 relative border-b border-gray-100">
-           <div class="absolute inset-0 flex items-center justify-center text-white text-4xl opacity-20">7 2 9</div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="ai"
+           data-title="Digit Recognition (MNIST)"
+           data-tags="Deep Learning,WebGPU,CNN,Python"
+           data-github="https://github.com/Clarafadda"
+           data-desc="Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU."
+           data-full-desc="Implémentation d'un réseau de neurones convolutif (CNN) entraîné sur le dataset MNIST. La particularité du projet réside dans l'inférence en temps réel dans le navigateur, accélérée par la technologie WebGPU pour des performances natives sans serveur backend lourd."
+           data-image-color="bg-gray-900"
+           data-emoji="7️⃣2️⃣">
+        <div class="h-48 bg-gray-900 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🔢
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Digit Recognition (MNIST)</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Reconnaissance de chiffres manuscrits en temps réel. Réseau de neurones (MLP/CNN) optimisé et accéléré par WebGPU.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Digit Recognition</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Deep Learning</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">WebGPU</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">CNN</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">WebGPU</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">CNN</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
-        <div class="h-48 bg-gray-800 relative border-b border-gray-100">
-           <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-black opacity-80"></div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="ai"
+           data-title="Éditeur de Scènes 3D"
+           data-tags="WGSL,Computer Graphics,Maths,Shaders"
+           data-github="https://github.com/Clarafadda"
+           data-desc="Moteur de rendu et éditeur interactif basé sur le Raymarching."
+           data-full-desc="Conception d'un moteur de rendu 3D basé non pas sur des polygones classiques, mais sur des fonctions mathématiques de distance (SDF) et l'algorithme de Raymarching. Écrit en WGSL pour le WebGPU, l'éditeur permet de composer des scènes complexes et fractales en temps réel."
+           data-image-color="bg-gray-800"
+           data-emoji="🧊✨">
+        <div class="h-48 bg-gray-800 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🧊
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Éditeur de scènes 3D</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Moteur de rendu et éditeur interactif basé sur le Raymarching. Programmation graphique avancée (shaders) sur navigateur.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Éditeur Raymarching</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Moteur de rendu et éditeur interactif basé sur le Raymarching.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">WGSL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Computer Graphics</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Maths</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">WGSL</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Graphics</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="ai">
-        <div class="h-48 bg-purple-50 relative border-b border-gray-100">
-           <div class="absolute inset-0 flex items-center justify-center text-4xl opacity-20">☁️🌙</div>
-           <span class="absolute top-4 right-4 bg-marine text-white px-3 py-1 text-xs font-bold rounded-full">Innovation</span>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="ai"
+           data-title="DreamLogue"
+           data-tags="GenAI,Interface Tangible,Creative Tech,Innovation"
+           data-desc="Expérience interactive d'interprétation des rêves via IA générative."
+           data-full-desc="DreamLogue est une installation interactive qui matérialise l'immatériel. L'utilisateur raconte son rêve, qui est analysé et interprété par une IA générative pour créer une représentation visuelle et narrative unique. La navigation dans ce 'paysage onirique' se fait via une interface physique tangible conçue sur mesure."
+           data-image-color="bg-purple-50"
+           data-emoji="☁️🌙">
+        <div class="h-48 bg-purple-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🌙
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">DreamLogue</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Expérience interactive d'interprétation des rêves combinant l'IA générative pour l'analyse et une interface tangible.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">DreamLogue</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Expérience interactive d'interprétation des rêves via IA générative.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">GenAI</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Interface Tangible</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Creative Tech</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">GenAI</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Tangible</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="product">
-        <div class="h-48 bg-orange-50 relative border-b border-gray-100"></div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="product"
+           data-title="Campagne Quickstarter"
+           data-tags="Crowdfunding,Design Produit,Marketing,Logistique"
+           data-desc="Lancement d'un portefeuille origami en cuir français."
+           data-full-desc="Gestion de projet complète pour le lancement d'un produit : de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne marketing sur Kickstarter. Réussite de la collecte, gestion de la production et de la logistique d'expédition aux contributeurs."
+           data-image-color="bg-orange-50"
+           data-emoji="🦊🎒">
+        <div class="h-48 bg-orange-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🦊
+        </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Campagne Quickstarter</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Conception et lancement d'un portefeuille en cuir origami. Gestion complète : prototypage, marketing et logistique.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Portefeuille Origami</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Lancement d'un portefeuille origami en cuir français.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Crowdfunding</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Design Produit</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Marketing</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Marketing</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Produit</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="data">
-        <div class="h-48 bg-red-50 relative border-b border-gray-100"></div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="data"
+           data-title="Airbnb Price Prediction"
+           data-tags="Python,Pandas,Scikit-Learn,Data Viz"
+           data-github="https://github.com/Clarafadda"
+           data-desc="Modèle prédictif pour l'estimation des prix de location."
+           data-full-desc="Projet complet de Data Science : nettoyage d'un jeu de données brut Airbnb, analyse exploratoire (EDA) pour identifier les corrélations, et entraînement de modèles de Machine Learning (Random Forest, XGBoost) pour prédire le prix optimal d'une nuitée selon les caractéristiques du logement."
+           data-image-color="bg-red-50"
+           data-emoji="📊🏠">
+        <div class="h-48 bg-red-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🏠
+        </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Airbnb Price Prediction</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Projet de Data Science : nettoyage de données, visualisation et création d'un modèle prédictif pour les prix de location.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Airbnb Prediction</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Modèle prédictif pour l'estimation des prix de location.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Python</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Pandas/Scikit</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Data Analysis</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Python</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Data</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="data">
-        <div class="h-48 bg-blue-50 relative border-b border-gray-100"></div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="data"
+           data-title="TransConnect Logistics"
+           data-tags="C#,SQL,Algorithmes,Graphes"
+           data-desc="Logiciel d'optimisation de trajets de livraison."
+           data-full-desc="Développement d'une application desktop en C# pour une entreprise de logistique. Le cœur du projet réside dans l'utilisation de la théorie des graphes (Algorithmes de Dijkstra et Floyd-Warshall) pour calculer les itinéraires les plus courts et optimiser la flotte de camions."
+           data-image-color="bg-blue-50"
+           data-emoji="🚚🗺️">
+        <div class="h-48 bg-blue-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🚚
+        </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">TransConnect Logistics</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Logiciel de gestion de livraisons routières. Optimisation des trajets grâce à la théorie des graphes (Dijkstra/Floyd-Warshall).
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">TransConnect</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Logiciel d'optimisation de trajets de livraison via graphes.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">C#</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">SQL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Algorithmes</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">C#</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Algo</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="data">
-        <div class="h-48 bg-teal-50 relative border-b border-gray-100">
-           <div class="absolute inset-0 flex items-center justify-center text-4xl opacity-20">🚲💾</div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="data"
+           data-title="Gestion BDD - Magasin Vélo"
+           data-tags="SQL,C# / .NET,Base de données,Gestion"
+           data-desc="Architecture SQL et application de gestion commerciale."
+           data-full-desc="Conception du schéma relationnel (MCD/MLD) pour un magasin de sport. Développement d'une interface client lourd en C# permettant la gestion des stocks en temps réel, le suivi des commandes clients et l'analyse du chiffre d'affaires via des requêtes SQL complexes."
+           data-image-color="bg-teal-50"
+           data-emoji="🚲💾">
+        <div class="h-48 bg-teal-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🚲
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Gestion BDD - Vélo</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Architecture d'une base de données SQL pour un magasin de sport et application de gestion C# (Stocks, Clients, Commandes).
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Gestion BDD Vélo</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Architecture SQL et application de gestion commerciale.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">SQL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">C# / .NET</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Base de données</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">SQL</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">.NET</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300" data-category="product">
-        <div class="h-48 bg-green-50 relative border-b border-gray-100"></div>
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+           data-category="product"
+           data-title="Collection Maker (HMAA)"
+           data-tags="Électronique,Arduino,Soudure,Impression 3D"
+           data-desc="Série de projets hardware et DIY."
+           data-full-desc="Dans le cadre du cours 'How to Make Almost Anything', réalisation d'une série de prototypes fonctionnels : assemblage et soudure d'une console Gameboy, modification d'un signal vidéo (VGAX) via électronique, et conception d'une flûte de pan imprimée en 3D et accordée."
+           data-image-color="bg-green-50"
+           data-emoji="🛠️🎮">
+        <div class="h-48 bg-green-50 relative border-b border-gray-100 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-500">
+           🛠️
+        </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Collection "Maker" (HMAA)</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Série de projets hardware : Gameboy soudée main, modification vidéo VGAX, flûte de pan imprimée 3D.
-          </p>
+          <h3 class="text-xl font-bold mb-2 text-marine">Collection Maker</h3>
+          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Série de projets hardware : Gameboy, VGAX, Impression 3D.</p>
           <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Électronique</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">Arduino</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded">DIY</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">DIY</span>
+            <span class="text-xs bg-gray-100 text-marine px-2 py-1 rounded font-medium">Hardware</span>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<div id="project-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4">
+  <div class="absolute inset-0 bg-marine/80 backdrop-blur-sm transition-opacity" id="modal-overlay"></div>
+  
+  <div class="relative bg-white w-full max-w-4xl max-h-[90vh] rounded-3xl overflow-y-auto shadow-2xl transform transition-all scale-95 opacity-0 duration-300" id="modal-content">
+    
+    <button id="close-modal" class="absolute top-4 right-4 z-20 p-2 bg-white/80 hover:bg-poudre rounded-full text-marine transition-colors shadow-sm">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <div class="grid md:grid-cols-2">
+      <div id="modal-visual" class="h-64 md:h-auto flex items-center justify-center text-9xl bg-gray-100">
+        </div>
+
+      <div class="p-8 md:p-12 flex flex-col justify-center">
+        <h3 id="modal-title" class="text-3xl font-bold text-marine mb-4 leading-tight">Titre du Projet</h3>
+        
+        <div id="modal-tags" class="flex flex-wrap gap-2 mb-6">
+          </div>
+
+        <p id="modal-desc" class="text-gray-600 leading-relaxed text-lg mb-8">
+          Description complète du projet...
+        </p>
+        
+        <div id="modal-links">
+           </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
+  const modal = document.getElementById('project-modal');
+  const modalContent = document.getElementById('modal-content');
+  const overlay = document.getElementById('modal-overlay');
+  const closeBtn = document.getElementById('close-modal');
+  
+  // Éléments de la modale à remplir
+  const mTitle = document.getElementById('modal-title');
+  const mDesc = document.getElementById('modal-desc');
+  const mVisual = document.getElementById('modal-visual');
+  const mTags = document.getElementById('modal-tags');
+  const mLinks = document.getElementById('modal-links');
 
+  // --- 1. FILTRAGE ---
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Gestion des boutons
+      // Style des boutons
       filterBtns.forEach(b => {
-          b.classList.remove('bg-marine', 'text-white');
-          b.classList.add('text-marine');
+        b.classList.remove('bg-marine', 'text-white');
+        b.classList.add('text-marine');
       });
-      btn.classList.remove('text-marine');
       btn.classList.add('bg-marine', 'text-white');
 
-      // Filtrage
-      const filterValue = btn.getAttribute('data-filter');
+      // Logique filtre
+      const filter = btn.getAttribute('data-filter');
       projectCards.forEach(card => {
-        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
           card.style.display = 'block';
+          // Petite animation d'apparition
+          card.style.opacity = '0';
           setTimeout(() => card.style.opacity = '1', 50);
         } else {
           card.style.display = 'none';
-          card.style.opacity = '0';
         }
       });
     });
   });
+
+  // --- 2. OUVERTURE MODALE ---
+  const openModal = (card) => {
+    // Récupérer les données
+    const title = card.getAttribute('data-title');
+    const fullDesc = card.getAttribute('data-full-desc');
+    const tags = card.getAttribute('data-tags').split(',');
+    const colorClass = card.getAttribute('data-image-color');
+    const emoji = card.getAttribute('data-emoji');
+    const github = card.getAttribute('data-github');
+
+    // Remplir la modale
+    mTitle.textContent = title;
+    mDesc.textContent = fullDesc;
+    
+    // Visuel
+    mVisual.className = `h-64 md:h-auto flex items-center justify-center text-9xl ${colorClass}`;
+    mVisual.innerHTML = `<span>${emoji}</span>`;
+
+    // Tags
+    mTags.innerHTML = tags.map(tag => 
+      `<span class="px-3 py-1 bg-gray-100 text-marine rounded-lg text-xs font-bold uppercase tracking-wider">${tag}</span>`
+    ).join('');
+
+    // Lien GitHub (s'il existe)
+    if (github) {
+      mLinks.innerHTML = `
+        <a href="${github}" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 bg-marine text-white rounded-full font-bold hover:bg-poudre hover:text-marine transition-all shadow-lg hover:shadow-xl">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          Voir sur GitHub
+        </a>
+      `;
+    } else {
+      mLinks.innerHTML = '';
+    }
+
+    // Afficher
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Bloque le scroll arrière-plan
+    
+    // Animation
+    setTimeout(() => {
+      modalContent.classList.remove('scale-95', 'opacity-0');
+      modalContent.classList.add('scale-100', 'opacity-100');
+    }, 10);
+  };
+
+  // --- 3. FERMETURE MODALE ---
+  const closeModal = () => {
+    modalContent.classList.remove('scale-100', 'opacity-100');
+    modalContent.classList.add('scale-95', 'opacity-0');
+    
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = ''; // Réactive le scroll
+    }, 300);
+  };
+
+  // Event Listeners
+  projectCards.forEach(card => card.addEventListener('click', () => openModal(card)));
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+  
+  // Fermer avec la touche Echap
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+});
 </script>
 
 
-<!-- COMPÉTENCES -->
 <!-- COMPÉTENCES -->
 <section id="competences" class="py-24 px-6 bg-gray-50 scroll-mt-32">
   <div class="max-w-6xl mx-auto">
@@ -762,6 +924,19 @@
 <footer class="py-8 text-center text-sm text-gray-500 border-t border-gray-50">
   © 2026 – Clara Fadda
 </footer>
+
+<div id="project-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4">
+  <div class="absolute inset-0 bg-marine/60 backdrop-blur-sm transition-opacity" id="modal-overlay"></div>
+  
+  <div class="relative bg-white w-full max-w-3xl max-h-[90vh] rounded-3xl overflow-y-auto shadow-2xl transition-all transform scale-95 opacity-0" id="modal-content">
+    <button id="close-modal" class="absolute top-6 right-6 p-2 bg-gray-100 hover:bg-poudre rounded-full text-marine transition-colors z-10">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <div id="modal-body" class="p-8 md:p-12">
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
