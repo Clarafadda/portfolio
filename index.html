@@ -19,6 +19,47 @@
       }
     }
   </script>
+  <style>
+    /* État initial : invisible et légèrement décalé vers le bas */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out; /* Durée et fluidité de l'animation */
+    }
+  
+    /* État final : visible et à sa place */
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-zoom {
+      opacity: 0;
+      transform: scale(0.8); /* 80% de la taille */
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Petit effet de rebond à la fin */
+    }
+
+    .reveal-zoom.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .sticky-header {
+      position: sticky;
+      top: 80px; /* Ajuste selon la hauteur de ton menu (header principal) */
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.8); /* Blanc transparent */
+      backdrop-filter: blur(10px); /* Effet de flou derrière le bandeau */
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(13, 13, 85, 0.1); /* Ligne légère marine */
+    }
+  
+    /* Pour ajouter un délai sur les éléments d'une grille (effet cascade) */
+    .reveal-delay-100 { transition-delay: 100ms; }
+    .reveal-delay-200 { transition-delay: 200ms; }
+    .reveal-delay-300 { transition-delay: 300ms; }
+  </style>
 </head>
 <body class="bg-white text-marine font-sans">
 
@@ -153,7 +194,7 @@
       <div class="space-y-16">
         
         <!-- Master ESILV -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Contenu droite -->
           <div class="ml-8 md:ml-0 md:text-right md:mr-8">
             <span class="inline-block text-xs font-semibold bg-marine text-white px-3 py-1 rounded-full mb-3">2024 – 2027</span>
@@ -186,7 +227,7 @@
         </div>
 
         <!-- Master EMLV -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Logo droite (desktop) -->
           <div class="hidden md:flex justify-end items-center">
             <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-sm overflow-hidden p-4">
@@ -212,7 +253,7 @@
         </div>
 
         <!-- Échange international -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Contenu droite -->
           <div class="ml-8 md:ml-0 md:text-right md:mr-8">
             <span class="inline-block text-xs font-semibold bg-marine text-white px-3 py-1 rounded-full mb-3">Sept. 2024 – Jan. 2025</span>
@@ -238,7 +279,7 @@
         </div>
 
         <!-- V.I.I ORIGIN Group -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex justify-end items-center">
             <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-sm overflow-hidden p-4">
@@ -264,7 +305,7 @@
         </div>
 
         <!-- Slide Session Trésorière -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Contenu gauche (desktop) -->
           <div class="ml-8 md:ml-0 md:text-right md:mr-8">
             <span class="inline-block text-xs font-semibold bg-poudre text-marine px-3 py-1 rounded-full mb-3">2023 – 2025</span>
@@ -291,7 +332,7 @@
         </div>
 
         <!-- Avenir APEI -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Logo gauche (desktop) -->
           <div class="hidden md:flex justify-end items-center">
             <div class="w-36 h-36 bg-white rounded-full border-4 border-poudre flex items-center justify-center shadow-sm overflow-hidden p-4">
@@ -317,7 +358,7 @@
         </div>
 
         <!-- Cycle préparatoire -->
-        <div class="relative grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative grid md:grid-cols-2 gap-8 items-center reveal">
           <!-- Contenu gauche (desktop) -->
           <div class="ml-8 md:ml-0 md:text-right md:mr-8">
             <span class="inline-block text-xs font-semibold bg-marine text-white px-3 py-1 rounded-full mb-3">2022 – 2024</span>
@@ -364,7 +405,8 @@
 
      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"           data-category="ai"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"           
+           data-category="ai"
            data-title="Rédacteur Multi-Agents LLM"
            data-tags="NLP,LLM,WebLLM,Transformers.js, UI/UX"
            data-github="https://github.com/Clarafadda/LLM-Research-Assistant/" 
@@ -388,7 +430,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-100"
            data-category="ai"
            data-title="Classification de chiffres – DL"
            data-tags="Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU"
@@ -413,7 +455,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-200"
            data-category="ai"
            data-title="Éditeur de Scènes 3D"
            data-tags="Computer Graphics,WGSL,Shaders,WebGPU, UI/UX"
@@ -437,7 +479,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
            data-category="ai"
            data-title="DreamLogue"
            data-tags="GenAI,Interface Tangible,Creative Tech,Innovation"
@@ -460,7 +502,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-100"
            data-category="product"
            data-title="Campagne Kickstarter"
            data-tags="Crowdfunding,Design Produit,Marketing,Logistique"
@@ -481,7 +523,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-200"
            data-category="data"
            data-title="Prediction des prix Airbnb"
            data-tags="Data,Python,Pandas, Seaborn, Matplotlib,Scikit-Learn"
@@ -505,7 +547,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
            data-category="data"
            data-title="Logistique TransConnect"
            data-tags="C#,SQL,POO,Algorithmes,Graphes"
@@ -528,7 +570,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-100"
            data-category="data"
            data-title="Gestion BDD - Magasin Vélo"
            data-tags="SQL,C#,Base de données"
@@ -549,7 +591,7 @@
         </div>
       </div>
 
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal reveal-delay-200"
            data-category="product"
            data-title="Design & Conception"
            data-tags="Design,Électronique, Hardware,Arduino,Soudure,3D"
@@ -765,7 +807,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="grid md:grid-cols-2 gap-6 mb-6">
       
       <!-- IA & Développement -->
-      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition reveal">
         <div class="flex items-center gap-3 mb-5">
           <div class="w-10 h-10 bg-poudre rounded-lg flex items-center justify-center">
             <span class="text-xl">💻</span>
@@ -816,7 +858,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <!-- Design & Hardware -->
-      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition reveal">
         <div class="flex items-center gap-3 mb-5">
           <div class="w-10 h-10 bg-poudre rounded-lg flex items-center justify-center">
             <span class="text-xl">🔧</span>
@@ -857,7 +899,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <!-- Gestion de Projet -->
-      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition reveal">
         <div class="flex items-center gap-3 mb-5">
           <div class="w-10 h-10 bg-poudre rounded-lg flex items-center justify-center">
             <span class="text-xl">📊</span>
@@ -889,7 +931,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <!-- Langues -->
-      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-xl border-2 border-poudre hover:shadow-lg transition reveal">
         <div class="flex items-center gap-3 mb-5">
           <div class="w-10 h-10 bg-poudre rounded-lg flex items-center justify-center">
             <span class="text-xl">🌍</span>
@@ -916,7 +958,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- Encadré Double Profil -->
-    <div class="bg-gradient-to-r from-poudre/40 via-poudre/20 to-poudre/40 border-2 border-poudre rounded-xl p-6 mb-6">
+    <div class="bg-gradient-to-r from-poudre/40 via-poudre/20 to-poudre/40 border-2 border-poudre rounded-xl p-6 mb-6 reveal reveal-delay-100">
       <div class="flex items-center justify-center gap-3 mb-3">
         <span class="text-2xl">🎯</span>
         <h3 class="text-lg font-bold text-marine">Double Profil Ingénieur-Manager</h3>
@@ -990,5 +1032,40 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      // On détecte la direction du scroll
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollingDown = scrollTop > lastScrollTop;
+      lastScrollTop = scrollTop;
+
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Si on descend et que l'élément apparaît : on anime
+          entry.target.classList.add('active');
+        } else {
+          // Si l'élément sort de l'écran par le BAS (on remonte)
+          // on lui retire la classe pour qu'il puisse se ré-animer après
+          const rect = entry.target.getBoundingClientRect();
+          if (rect.top > 0) { 
+            entry.target.classList.remove('active');
+          }
+        }
+      });
+    }, observerOptions);
+
+    const elementsToReveal = document.querySelectorAll('[class*="reveal"]');
+    elementsToReveal.forEach(el => observer.observe(el));
+  });
+</script>
 </body>
 </html>
