@@ -61,6 +61,7 @@
     .reveal-delay-300 { transition-delay: 300ms; }
   </style>
 </head>
+<script src="translations.js"></script>
 <body class="bg-white text-marine font-sans">
 
   <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 transition-all duration-300">
@@ -75,9 +76,9 @@
         <a href="#projets" class="hover:text-poudre transition-colors">Projets</a>
         <a href="#competences" class="hover:text-poudre transition-colors">Compétences</a>
         <a href="#contact" class="hover:text-poudre transition-colors">Contact</a>
-        <a href="english.html" class="ml-4 px-4 py-2 border border-marine/20 rounded-full hover:bg-marine hover:text-white transition-all text-xs">EN</a>
+        <a href="#" id="lang-toggle" class="ml-4 px-4 py-2 border border-marine/20 rounded-full hover:bg-marine hover:text-white transition-all text-xs">EN</a>     
       </nav>
-  
+
       <!-- Bouton menu mobile -->
       <button id="menu-btn" class="md:hidden text-marine focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,6 +94,7 @@
       <a href="#projets" class="mobile-link hover:text-poudre">Projets</a>
       <a href="#competences" class="mobile-link hover:text-poudre">Compétences</a>
       <a href="#contact" class="mobile-link hover:text-poudre">Contact</a>
+      <a href="#" id="lang-toggle" class="ml-4 px-4 py-2 border border-marine/20 rounded-full hover:bg-marine hover:text-white transition-all text-xs">EN</a>
     </div>
   </header>
   
@@ -552,6 +554,7 @@
            data-title="Logistique TransConnect"
            data-tags="C#,SQL,POO,Algorithmes,Graphes"
            data-desc="Logiciel d'optimisation de trajets de livraison."
+           data-docs="assets/Rapport transconnect.pdf"
            data-full-desc="Développement d'une application desktop en C# pour une entreprise de logistique fictive. Le cœur du projet réside dans l'utilisation de la théorie des graphes (Algorithmes de Dijkstra et Floyd-Warshall) pour calculer les itinéraires les plus courts et optimiser la flotte de camions et de chauffeurs. Utilisation de la POO pour répartir les chauffeur et les différents types de camions. Création d'une base de données pour référencer les clients, commandes et livraisons."
            data-image="assets/Image transconnect.jpg">
         <div class="h-48 bg-blue-50 relative border-b border-gray-100 overflow-hidden">
@@ -1067,5 +1070,8 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToReveal.forEach(el => observer.observe(el));
   });
 </script>
+
+<script src="translations.js"></script>
+
 </body>
 </html>
