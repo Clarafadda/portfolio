@@ -589,8 +589,8 @@
 
     <div class="flex flex-col md:grid md:grid-cols-5">
       <!-- Image (2/5 de largeur) -->
-      <div id="modal-visual" class="md:col-span-2 h-64 md:h-auto flex items-center justify-center bg-gray-100">
-      </div>
+      <div id="modal-visual" class="md:col-span-2 h-64 md:h-auto bg-gray-100 overflow-hidden"></div>
+
 
 
       <!-- Contenu (3/5 de largeur) -->
@@ -668,7 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mDesc.textContent = fullDesc;
     
     // Visuel
-    mVisual.innerHTML = `<img src="${image}" alt="${title}" class="max-w-full max-h-full object-contain">`;
+    mVisual.innerHTML = `<img src="${image}" alt="${title}" class="w-full h-full object-cover object-center">`;
 
 
     // Tags
