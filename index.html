@@ -415,9 +415,9 @@
            data-demo="https://clarafadda.github.io/LLM-Research-Assistant/"
            data-desc="Architecture autonome pour la rédaction de revues de littérature scientifique."
            data-full-desc="Développement d'une architecture complexe utilisant plusieurs agents autonomes (LLM) conçu pour l'analyse automatisée de la littérature et des documents. Cette application utilise la génération augmentée par la récupération (RAG) pour fournir des réponses basées exclusivement sur les documents PDF téléchargés."
-           data-image="assets/Image Agent LLM.png">
+           data-image="assets/Image Agent LLM 2.png">
         <div class="h-48 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Agent LLM.png" alt="AI Agents" class="project-image w-full h-full object-cover">
+          <img src="assets/Image Agent LLM 2.png" alt="AI Agents" class="project-image w-full h-full object-cover">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2 text-marine">Rédacteur Multi-Agents LLM</h3>
@@ -746,7 +746,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (demo) {
-      mLinks.innerHTML += createLink(demo,'Démo', '🚀');
+      mLinks.innerHTML += createLink(demo,'Demo', '🚀');
     }
 
     // Support pour plusieurs liens de documentation
@@ -1010,7 +1010,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </svg>
         </a>
 
-        <a href="assets/CV Clara FADDA.pdf" download class="font-bold text-marine border-b-2 border-poudre hover:border-marine transition-all pb-1 uppercase tracking-tighter text-xs">
+        <a href="assets/CV Clara FADDA.pdf" id="cv-download-btn" class="font-bold text-marine border-b-2 border-poudre hover:border-marine transition-all pb-1 uppercase tracking-tighter text-xs" download >
           Télécharger mon CV
         </a>
       </div>
