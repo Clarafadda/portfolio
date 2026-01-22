@@ -1,5 +1,3 @@
-// translations.js - À placer dans un fichier séparé ou dans votre HTML
-
 const translations = {
   fr: {
     // Header & Navigation
@@ -117,7 +115,7 @@ const translations = {
           title: "DreamLogue",
           desc: "Expérience interactive d'interprétation des rêves via une IA générative.",
           fullDesc: "DreamLogue est une installation interactive permettant de transformer les rêves en un outil de compréhension de soi. À partir d'un récit manuscrit, une IA générative analyse et interprète le rêve pour créer une visualisation unique affichée sur un miroir. Je développe actuellement la reconnaissance de l'écriture manuscrite en temps réel.",
-          tags: "GenAI,Interface Tangible,Creative Tech,Innovation"
+          tags: "IA,Interface Tangible,Creative Tech,Innovation"
         },
         kickstarter: {
           title: "Campagne Kickstarter",
@@ -146,15 +144,14 @@ const translations = {
         hardware: {
           title: "Design & Conception",
           desc: "Série de projets hardware : Gameboy, VGAX, Design & Impression 3D.",
-          fullDesc: "Dans le cadre du cours 'How to Make Almost Anything', réalisation d'une série de prototypes fonctionnels : assemblage et soudure d'une console Gameboy, conception d'une flûte de pan designée et imprimée en 3D, et modification d'un signal vidéo (VGAX) via électronique.",
-          tags: "Design,Électronique,Hardware,Arduino,Soudure,3D"
+          fullDesc: "Dans le cadre du cours 'How to Make Almost Anything', réalisation d'une série de prototypes fonctionnels : conception d'une montre intelligente pour les coureurs, assemblage et soudure d'une console Gameboy, conception d'une flûte de pan designée et imprimée en 3D, et modification d'un signal vidéo (VGAX) via électronique.",
+          tags: "Design,Électronique,Hardware,Arduino,3D"
         }
       },
       modal: {
         demo: "Démo",
         documentation: "Documentation"
       }
-      
     },
     
     // Compétences Section
@@ -194,6 +191,8 @@ const translations = {
           }
         }
       },
+      // IMPORTANT : La clé (gauche) est le texte en Français affiché dans votre HTML.
+      // La valeur (droite) est la traduction en Français (donc identique).
       skills: {
         // Langages
         "Python": "Python",
@@ -202,10 +201,10 @@ const translations = {
         "JavaScript": "JavaScript",
         "Tailwind": "Tailwind",
         "HTML": "HTML",
-        "POO": "OOP",
-        "Graphes": "Graphs",
+        "POO": "POO",
+        "Graphes": "Graphes",
         // ML/AI
-        "LLM Multi-agents": "Multi-agent LLM",
+        "LLM Multi-agents": "LLM Multi-agents",
         "NLP": "NLP",
         "CNN": "CNN",
         "MLP": "MLP",
@@ -222,20 +221,20 @@ const translations = {
         // Design
         "Figma": "Figma",
         "Design Thinking": "Design Thinking",
-        "Prototypage": "Prototyping",
+        "Prototypage": "Prototypage",
         "Responsive design": "Responsive design",
         // CAD
         "SolidWorks": "SolidWorks",
         "Fusion 360": "Fusion 360",
-        "Impression 3D": "3D Printing",
+        "Impression 3D": "Impression 3D",
         // Electronics
         "KiCad": "KiCad",
         "Arduino": "Arduino",
-        "Soudure": "Soldering",
+        "Soudure": "Soudure",
         // Management
-        "Budget & Trésorerie": "Budget & Treasury",
-        "Gestion d'équipe.": "Team Management",
-        "Gestion d'évènements": "Event Management",
+        "Budget & Trésorerie": "Budget & Trésorerie",
+        "Gestion d'équipe.": "Gestion d'équipe.",
+        "Gestion d'évènements": "Gestion d'évènements",
         "Sponsoring": "Sponsoring",
         // Tools
         "Git / GitHub / GitHub pages": "Git / GitHub / GitHub pages",
@@ -379,7 +378,7 @@ const translations = {
           title: "DreamLogue",
           desc: "Interactive dream interpretation experience via generative AI.",
           fullDesc: "DreamLogue is an interactive installation that transforms dreams into a self-understanding tool. From a handwritten narrative, a generative AI analyzes and interprets the dream to create a unique visualization displayed on a mirror. I am currently developing real-time handwriting recognition.",
-          tags: "GenAI,Tangible Interface,Creative Tech,Innovation"
+          tags: "AI,Tangible Interface,Creative Tech,Innovation"
         },
         kickstarter: {
           title: "Kickstarter Campaign",
@@ -408,8 +407,8 @@ const translations = {
         hardware: {
           title: "Design & Prototyping",
           desc: "Series of hardware projects: Gameboy, VGAX, Design & 3D Printing.",
-          fullDesc: "As part of the 'How to Make Almost Anything' course, creation of a series of functional prototypes: assembly and soldering of a Gameboy console, design of a 3D-designed and printed pan flute, and modification of a video signal (VGAX) via electronics.",
-          tags: "Design,Electronics,Hardware,Arduino,Soldering,3D"
+          fullDesc: "As part of the 'How to Make Almost Anything' course, creation of a series of functional prototypes: design of a smartwatch for runners, assembly and soldering of a Gameboy console, design of a 3D-designed and printed pan flute, and modification of a video signal (VGAX) via electronics.",
+          tags: "Design,Electronics,Hardware,Arduino,3D"
         }
       },
       modal: {
@@ -455,6 +454,8 @@ const translations = {
           }
         }
       },
+      // IMPORTANT : La clé doit être identique à celle de FR.
+      // La valeur est la traduction anglaise.
       skills: {
         // Langages
         "Python": "Python",
@@ -529,7 +530,7 @@ const translations = {
 function setLanguage(lang) {
   const t = translations[lang];
   
-  // Navigation (desktop et mobile)
+  // Navigation
   const navLinks = {
     parcours: document.querySelectorAll('a[href="#parcours"]'),
     projets: document.querySelectorAll('a[href="#projets"]'),
@@ -563,7 +564,6 @@ function setLanguage(lang) {
   const parcoursTitle = document.querySelector('#parcours h2');
   if (parcoursTitle) parcoursTitle.textContent = t.parcours.title;
   
-  // Mettre à jour chaque élément du parcours
   const parcoursItems = document.querySelectorAll('#parcours .space-y-16 > div');
   parcoursItems.forEach((item, index) => {
     if (t.parcours.items[index]) {
@@ -584,7 +584,7 @@ function setLanguage(lang) {
     }
   });
   
-  // Projets - Titre et filtres
+  // Projets
   const projetsTitle = document.querySelector('#projets h2');
   if (projetsTitle) projetsTitle.textContent = t.projets.title;
   
@@ -594,7 +594,6 @@ function setLanguage(lang) {
   if (filterBtns[2]) filterBtns[2].textContent = t.projets.filters.product;
   if (filterBtns[3]) filterBtns[3].textContent = t.projets.filters.data;
   
-  // Projets - Cartes individuelles
   const projectCards = document.querySelectorAll('.project-card');
   const projectKeys = ['llm', 'classifier', 'raymarching', 'dreamlogue', 'kickstarter', 'airbnb', 'transconnect', 'velo', 'hardware'];
   
@@ -607,13 +606,13 @@ function setLanguage(lang) {
       if (cardTitle) cardTitle.textContent = t.projets.items[key].title;
       if (cardDesc) cardDesc.textContent = t.projets.items[key].desc;
       
-      // Mettre à jour les attributs data pour la modale
+      // Update attributes for modal
       card.setAttribute('data-title', t.projets.items[key].title);
       card.setAttribute('data-desc', t.projets.items[key].desc);
       card.setAttribute('data-full-desc', t.projets.items[key].fullDesc);
       card.setAttribute('data-tags', t.projets.items[key].tags);
       
-      // Traduire les tags visibles sur la carte
+      // Translate visible tags
       const tagContainer = card.querySelector('.flex.flex-wrap.gap-2');
       if (tagContainer && t.projets.items[key].tags) {
         const tags = t.projets.items[key].tags.split(',');
@@ -627,18 +626,16 @@ function setLanguage(lang) {
     }
   });
   
-  // Compétences
+  // Compétences - Titres
   const competencesTitle = document.querySelector('#competences h2');
   if (competencesTitle) competencesTitle.textContent = t.competences.title;
   
-  // Titres des catégories de compétences
   const skillCategories = document.querySelectorAll('#competences h3');
   if (skillCategories[0]) skillCategories[0].textContent = t.competences.categories.ai.title;
   if (skillCategories[1]) skillCategories[1].textContent = t.competences.categories.design.title;
   if (skillCategories[2]) skillCategories[2].textContent = t.competences.categories.project.title;
   if (skillCategories[3]) skillCategories[3].textContent = t.competences.categories.languages.title;
   
-  // Sous-catégories de compétences
   const subcatTitles = document.querySelectorAll('#competences .font-bold.text-marine.mb-2.text-xs');
   if (subcatTitles[0]) subcatTitles[0].textContent = t.competences.categories.ai.subcategories.programming;
   if (subcatTitles[1]) subcatTitles[1].textContent = t.competences.categories.ai.subcategories.ml;
@@ -649,11 +646,19 @@ function setLanguage(lang) {
   if (subcatTitles[6]) subcatTitles[6].textContent = t.competences.categories.project.subcategories.management;
   if (subcatTitles[7]) subcatTitles[7].textContent = t.competences.categories.project.subcategories.tools;
   
-  // Traduire toutes les compétences individuelles
+  // --- NOUVELLE LOGIQUE POUR LES VIGNETTES COMPÉTENCES ---
   document.querySelectorAll('#competences span.px-3.py-1').forEach(skillEl => {
-    const skillText = skillEl.textContent.trim();
-    if (t.competences.skills[skillText]) {
-      skillEl.textContent = t.competences.skills[skillText];
+    // 1. Sauvegarde du texte original (Français) lors du premier passage
+    if (!skillEl.hasAttribute('data-original-text')) {
+      skillEl.setAttribute('data-original-text', skillEl.textContent.trim());
+    }
+    
+    // 2. On récupère la clé (le texte original en français)
+    const originalText = skillEl.getAttribute('data-original-text');
+    
+    // 3. On cherche la traduction en utilisant cette clé stable
+    if (t.competences.skills[originalText]) {
+      skillEl.textContent = t.competences.skills[originalText];
     }
   });
   
@@ -664,11 +669,11 @@ function setLanguage(lang) {
   if (langLabels[2]) langLabels[2].textContent = t.competences.categories.languages.levels.spanish;
   
   const nativeLabel = document.querySelector('#competences .flex.justify-between span.text-xs.font-bold');
-  if (nativeLabel && (nativeLabel.textContent.includes('Natif') || nativeLabel.textContent.includes('Native'))) {
+  if (nativeLabel) {
     nativeLabel.textContent = t.competences.categories.languages.native;
   }
   
-  // Double profil - titre
+  // Double profil
   const doubleProfileSection = document.querySelector('#competences .bg-gradient-to-r');
   if (doubleProfileSection) {
     const doubleProfileTitle = doubleProfileSection.querySelector('h3');
@@ -689,6 +694,7 @@ function setLanguage(lang) {
   const emailBtn = document.querySelector('#contact a[href^="mailto"]');
   if (emailBtn) emailBtn.textContent = t.contact.cta;
   
+  // Bouton CV (Intègre votre correctif précédent)
   const cvBtn = document.getElementById('cv-download-btn');
   if (cvBtn) {
     cvBtn.textContent = t.contact.downloadCV;
@@ -701,23 +707,18 @@ function setLanguage(lang) {
   
   // Sauvegarder la préférence
   localStorage.setItem('preferredLanguage', lang);
-  
-  // Mettre à jour l'attribut lang de la page
   document.documentElement.lang = lang;
 }
 
-// Initialisation au chargement de la page
+// Initialisation
 document.addEventListener('DOMContentLoaded', () => {
-  // Charger la langue sauvegardée ou utiliser le français par défaut
   const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
   setLanguage(savedLang);
   
-  // Gérer le clic sur le bouton de langue (desktop et mobile)
   const langBtns = document.querySelectorAll('a[href="english.html"], #lang-toggle');
   
   langBtns.forEach(langBtn => {
     if (langBtn) {
-      // Mettre à jour le texte initial du bouton
       const currentLang = savedLang || 'fr';
       langBtn.textContent = currentLang === 'fr' ? 'EN' : 'FR';
       
@@ -727,7 +728,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const newLang = currentLang === 'fr' ? 'en' : 'fr';
         setLanguage(newLang);
         
-        // Mettre à jour le texte de tous les boutons de langue
         langBtns.forEach(btn => {
           btn.textContent = newLang === 'fr' ? 'EN' : 'FR';
         });
@@ -735,8 +735,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-// Export pour utilisation dans d'autres fichiers
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { translations, setLanguage };
-}
