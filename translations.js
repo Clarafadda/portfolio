@@ -23,7 +23,7 @@ const translations = {
       title: "Parcours",
       items: [
         {
-          period: "2024 — 2027",
+          period: "2022 — 2027",
           title: "Master Creative Technology",
           institution: "ESILV — École d'Ingénieurs",
           description: [
@@ -33,7 +33,7 @@ const translations = {
           ]
         },
         {
-          period: "2024 — 2027",
+          period: "2022 — 2027",
           title: "Master Marketing & Management",
           institution: "EMLV — École de Management",
           description: [
@@ -70,14 +70,6 @@ const translations = {
           institution: "Avenir APEI",
           description: [
             "Bénévolat au sein d'un foyer d'hébergement pour personnes atteintes d'handicap mental."
-          ]
-        },
-        {
-          period: "2022 — 2024",
-          title: "Cycle préparatoire ingénieur",
-          institution: "ESILV — Pôle Léonard de Vinci",
-          description: [
-            "Formation scientifique pluridisciplinaire : mathématiques, informatique, physique et sciences de l'ingénieur."
           ]
         }
       ]
@@ -191,8 +183,6 @@ const translations = {
           }
         }
       },
-      // IMPORTANT : La clé (gauche) est le texte en Français affiché dans votre HTML.
-      // La valeur (droite) est la traduction en Français (donc identique).
       skills: {
         // Langages
         "Python": "Python",
@@ -201,8 +191,6 @@ const translations = {
         "JavaScript": "JavaScript",
         "Tailwind": "Tailwind",
         "HTML": "HTML",
-        "POO": "POO",
-        "Graphes": "Graphes",
         // ML/AI
         "LLM Multi-agents": "LLM Multi-agents",
         "NLP": "NLP",
@@ -286,7 +274,7 @@ const translations = {
       title: "Journey",
       items: [
         {
-          period: "2024 — 2027",
+          period: "2022 — 2027",
           title: "Master's in Creative Technology",
           institution: "ESILV — Engineering School",
           description: [
@@ -296,7 +284,7 @@ const translations = {
           ]
         },
         {
-          period: "2024 — 2027",
+          period: "2022 — 2027",
           title: "Master's in Marketing & Management",
           institution: "EMLV — Business School",
           description: [
@@ -333,14 +321,6 @@ const translations = {
           institution: "Avenir APEI",
           description: [
             "Volunteering in a residential facility for people with mental disabilities."
-          ]
-        },
-        {
-          period: "2022 — 2024",
-          title: "Engineering Preparatory Cycle",
-          institution: "ESILV — Pôle Léonard de Vinci",
-          description: [
-            "Multidisciplinary scientific training: mathematics, computer science, physics, and engineering sciences."
           ]
         }
       ]
@@ -454,8 +434,6 @@ const translations = {
           }
         }
       },
-      // IMPORTANT : La clé doit être identique à celle de FR.
-      // La valeur est la traduction anglaise.
       skills: {
         // Langages
         "Python": "Python",
@@ -464,8 +442,6 @@ const translations = {
         "JavaScript": "JavaScript",
         "Tailwind": "Tailwind",
         "HTML": "HTML",
-        "POO": "OOP",
-        "Graphes": "Graphs",
         // ML/AI
         "LLM Multi-agents": "Multi-agent LLM",
         "NLP": "NLP",
