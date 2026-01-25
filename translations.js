@@ -10,10 +10,11 @@ const translations = {
     
     // Hero Section
     hero: {
-      badge: "Étudiante en double master Ingénieure-Manager • Promotion 2027",
+      badge: "Étudiante Ingénieure-Manager • Promotion 2027",
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Produit",
-      description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle. Je suis à la recherche d’un stage de 16 à 20 semaines à partir du 13 avril, en gestion de projet et développement de produits numériques, à l’interface entre technologie, design et usages.",
+      description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle.",
+      internship:"Je suis à la recherche d’un stage de 16 à 20 semaines à partir du 13 avril, en gestion de projet et développement de produits numériques, à l’interface entre technologie, design et usages.",
       cta1: "Voir mes projets",
       cta2: "Me contacter"
     },
@@ -264,7 +265,8 @@ const translations = {
       badge: "Engineering–Management Dual Degree Student • Class of 2027",
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Product",
-      description: "Engineer in Creative Technology, at the crossroads of software development, product, and innovation. I lead technical projects from start to finish, from research to software and hardware implementation. I'm seeking a 16 to 20 weeks internship starting April 13, focused on project management and digital product development, at the intersection of technology, design, and user needs.",
+      description: "Engineer in Creative Technology, at the crossroads of software development, product, and innovation. I lead technical projects from start to finish, from research to software and hardware implementation.",
+      internship:"I'm seeking a 16 to 20 weeks internship starting April 13, focused on project management and digital product development, at the intersection of technology, design, and user needs.",
       cta1: "View my projects",
       cta2: "Contact me"
     },
@@ -531,6 +533,9 @@ function setLanguage(lang) {
   
   const heroDesc = document.querySelector('#accueil p.text-gray-700.mb-8');
   if (heroDesc) heroDesc.textContent = t.hero.description;
+
+  const heroIntern = document.querySelector('#accueil p.text-gray-700.mb-10');
+  if (heroIntern) heroIntern.textContent = t.hero.internship;
   
   const heroCtas = document.querySelectorAll('#accueil a.px-6');
   if (heroCtas[0]) heroCtas[0].textContent = t.hero.cta1;
