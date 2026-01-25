@@ -13,7 +13,7 @@ const translations = {
       badge: "Étudiante Ingénieure • Promotion 2027",
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Produit",
-      description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle.",
+      description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle. Je suis à la recherche d’un stage de 16 à 20 semaines à partir du 13 avril, en gestion de projet et développement de produits numériques, à l’interface entre technologie, design et usages.",
       cta1: "Voir mes projets",
       cta2: "Me contacter"
     },
@@ -240,7 +240,7 @@ const translations = {
     contact: {
       title: "Contact",
       description1: "N'hésitez pas à me contacter si vous avez une demande ou une question,",
-      description2: "je me ferais un plaisir de vous répondre rapidement.",
+      description2: "je me ferai un plaisir de vous répondre rapidement.",
       cta: "M'envoyer un email",
       downloadCV: "Télécharger mon CV",
       cvLink: "assets/CV Clara FADDA.pdf"
@@ -264,7 +264,7 @@ const translations = {
       badge: "Engineering Student • Class of 2027",
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Product",
-      description: "Engineer in Creative Technology, at the crossroads of software development, product, and innovation. I lead technical projects from start to finish, from research to software and hardware implementation.",
+      description: "Engineer in Creative Technology, at the crossroads of software development, product, and innovation. I lead technical projects from start to finish, from research to software and hardware implementation. I'm seeking a 16 to 20 weeks internship starting April 13, focused on project management and digital product development, at the intersection of technology, design, and user needs.",
       cta1: "View my projects",
       cta2: "Contact me"
     },
