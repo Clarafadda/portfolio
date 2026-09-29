@@ -14,7 +14,7 @@ const translations = {
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Produit",
       description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle.",
-      internship:"Je suis à la recherche d’un stage de 16 à 20 semaines à partir du 13 avril, en gestion de projet et développement de produits numériques, à l’interface entre technologie, design et usages.",
+      internship:"Je suis à la recherche d’un stage de 22 à 26 semaines à partir du 1er février 2027, en gestion de projet et développement de produits numériques, à l’interface entre technologie, design et usages.",
       cta1: "Voir mes projets",
       cta2: "Me contacter"
     },
@@ -39,6 +39,14 @@ const translations = {
           institution: "EMLV — École de Management",
           description: [
             "Formation complémentaire en marketing stratégique, gestion de projet et management pour une vision produit complète."
+          ]
+        },
+        {
+          period: "Avr. 2026 - Juil. 2026",
+          title: "Stage Recherche et Développement IA",
+          institution: "AEROW - Groupe Kimeia",
+          description: [
+            "Conception et développement d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents."
           ]
         },
         {
@@ -86,6 +94,12 @@ const translations = {
         data: "Data & Software"
       },
       items: {
+        LAF: {
+          title: "Lutte Anti-fraude",
+          desc: "Outil IA de détection de fraude documentaire",
+          fullDesc: "ilotage autonome d'un projet R&D (cadrage, itérations, livrables)./nConception et développement d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents. Déploiement d'une démo web full-stack (FastAPI) en local et export ONNX. Prise de décision technique argumentée, appuyée sur des expérimentations comparatives.",
+          tags: "CNN,Autoencoder,Transformers,VLM,UI/UX"
+        },
         llm: {
           title: "Rédacteur Multi-Agents LLM",
           desc: "Assistant de recherche IA entièrement basé sur navigateur pour la rédaction d'états de l'art.",
@@ -104,16 +118,10 @@ const translations = {
           fullDesc: "Ce projet est un éditeur de scène 3D interactif basé sur WebGPU, utilisant le ray marching et des fonctions de distance signée (SDF) pour le rendu procédural en temps réel. Il permet la création de scènes à partir de primitives 3D (comme des sphères, des boîtes, etc.) et la modification simultanée du code shader WGSL.",
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
-        dreamlogue: {
-          title: "DreamLogue",
-          desc: "Expérience interactive d'interprétation des rêves via une IA générative.",
-          fullDesc: "DreamLogue est une installation interactive permettant de transformer les rêves en un outil de compréhension de soi. À partir d'un récit manuscrit, une IA générative analyse et interprète le rêve pour créer une visualisation unique affichée sur un miroir. Je développe actuellement la reconnaissance de l'écriture manuscrite en temps réel.",
-          tags: "IA,Interface Tangible,Creative Tech,Innovation"
-        },
         kickstarter: {
           title: "Campagne Kickstarter",
           desc: "Gestion de projet complète pour le lancement d'un produit : un portefeuille origami en cuir français.",
-          fullDesc: "Gestion de projet complète pour le lancement d'un produit : de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne marketing sur Kickstarter. La campagne sera lancée en Avril 2026 et nous gérerons entièrement la production et la logistique d'expédition aux contributeurs.",
+          fullDesc: "Gestion de projet complète pour le lancement d'un produit : de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne marketing sur Kickstarter. La campagne a été lancée en Avril 2026 et a atteint un objectif de 351%. Nous gérerons entièrement la production et la logistique d'expédition aux contributeurs.",
           tags: "Crowdfunding,Design Produit,Marketing,Logistique"
         },
         airbnb: {
@@ -266,7 +274,7 @@ const translations = {
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Product",
       description: "Engineer in Creative Technology, at the crossroads of software development, product, and innovation. I lead technical projects from start to finish, from research to software and hardware implementation.",
-      internship:"I'm seeking a 16 to 20 weeks internship starting April 13, focused on project management and digital product development, at the intersection of technology, design, and user needs.",
+      internship:"I'm seeking a 22 to 26 weeks internship starting February 1st, focused on project management and digital product development, at the intersection of technology, design, and user needs.",
       cta1: "View my projects",
       cta2: "Contact me"
     },
@@ -291,6 +299,14 @@ const translations = {
           institution: "EMLV — Business School",
           description: [
             "Complementary training in strategic marketing, project management, and leadership for a complete product vision."
+          ]
+        },
+        {
+          period: "Apr. 2026 - Jul. 2026",
+          title: "AI Research and Development Internship",
+          institution: "AEROW - Kimeia Group",
+          description: [
+            "Design and development of a deep learning pipeline (CNN, segmentation, Transformer, VLM) for document forgery detection."
           ]
         },
         {
@@ -338,6 +354,12 @@ const translations = {
         data: "Data & Software"
       },
       items: {
+        LAF: {
+          title: "Anti-fraud Project",
+          desc: "AI Tool for Document Fraud Detection",
+          fullDesc: "Autonomous leadership of an R&D project (scoping, iterations, deliverables). Design and development of a deep learning pipeline (CNN, segmentation, Transformer, VLM) for document forgery detection. Deployment of a full-stack web demo (FastAPI) locally and ONNX export. Technical decision-making backed by comparative experiments.",
+          tags: "CNN,Autoencoder,Transformers,VLM,UI/UX"
+        },
         llm: {
           title: "Multi-Agent LLM Writer",
           desc: "Browser-based AI research assistant for writing state-of-the-art reviews.",
@@ -356,16 +378,10 @@ const translations = {
           fullDesc: "This project is an interactive 3D scene editor based on WebGPU, using ray marching and signed distance functions (SDF) for real-time procedural rendering. It allows creation of scenes from 3D primitives (like spheres, boxes, etc.) and simultaneous modification of WGSL shader code.",
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
-        dreamlogue: {
-          title: "DreamLogue",
-          desc: "Interactive dream interpretation experience via generative AI.",
-          fullDesc: "DreamLogue is an interactive installation that transforms dreams into a self-understanding tool. From a handwritten narrative, a generative AI analyzes and interprets the dream to create a unique visualization displayed on a mirror. I am currently developing real-time handwriting recognition.",
-          tags: "AI,Tangible Interface,Creative Tech,Innovation"
-        },
         kickstarter: {
           title: "Kickstarter Campaign",
           desc: "Complete project management for product launch: a French leather origami wallet.",
-          fullDesc: "Complete project management for product launch: from designing a minimalist folded leather wallet (origami) to the Kickstarter marketing campaign. The campaign will be launched in April 2026 and we will fully manage production and shipping logistics to backers.",
+          fullDesc: "Complete project management for product launch: from designing a minimalist folded leather wallet (origami) to the Kickstarter marketing campaign. The campaign has been launched in April 2026 and reached 351% of its goals. We will fully manage production and shipping logistics to backers.",
           tags: "Crowdfunding,Product Design,Marketing,Logistics"
         },
         airbnb: {
@@ -576,7 +592,7 @@ function setLanguage(lang) {
   if (filterBtns[3]) filterBtns[3].textContent = t.projets.filters.data;
   
   const projectCards = document.querySelectorAll('.project-card');
-  const projectKeys = ['llm', 'classifier', 'raymarching', 'dreamlogue', 'kickstarter', 'airbnb', 'transconnect', 'velo', 'hardware'];
+  const projectKeys = ['LAF','llm', 'classifier', 'raymarching', 'kickstarter', 'airbnb', 'transconnect', 'velo', 'hardware'];
   
   projectCards.forEach((card, index) => {
     const key = projectKeys[index];
