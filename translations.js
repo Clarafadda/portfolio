@@ -97,7 +97,7 @@ const translations = {
         LAF: {
           title: "Lutte Anti-fraude",
           desc: "Outil IA de détection de fraude documentaire",
-          fullDesc: "ilotage autonome d'un projet R&D (cadrage, itérations, livrables)./nConception et développement d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents. Déploiement d'une démo web full-stack (FastAPI) en local et export ONNX. Prise de décision technique argumentée, appuyée sur des expérimentations comparatives.",
+          fullDesc: "Pilotage autonome d'un projet R&D (cadrage, itérations, livrables). Conception et développement d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents. Déploiement d'une démo web full-stack (FastAPI) en local et export ONNX. Prise de décision technique argumentée, appuyée sur des expérimentations comparatives.",
           tags: "CNN,Autoencoder,Transformers,VLM,UI/UX"
         },
         llm: {
