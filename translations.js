@@ -10,7 +10,7 @@ const translations = {
     
     // Hero Section
     hero: {
-      badge: "Étudiante Ingénieure-Manager • Promotion 2027",
+      badge: "Étudiante en double diplôme Ingénieure-Manager • Promotion 2027",
       name: "Clara Fadda",
       title: "Creative Technologist • Innovation • Produit",
       description: "Ingénieure en Creative Technology, à la croisée entre développement logiciel, produit et innovation. Je mène des projets techniques de bout en bout, de la recherche à l'implémentation logicielle et matérielle.",
