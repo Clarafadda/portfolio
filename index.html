@@ -395,252 +395,166 @@
 
 
 <!-- Projets -->
-<section id="projets" class="py-24 px-6 bg-white scroll-mt-32">
-  <div class="max-w-7xl mx-auto">
-    <div class="mb-16 text-center">
-      <h2 class="text-4xl font-bold text-marine mb-4">Projets Réalisés</h2>
-    </div>
-
-    <div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
-      <button class="filter-btn active px-6 py-2 rounded-full border border-marine bg-marine text-white transition-all shadow-md hover:shadow-lg" data-filter="all">Tous</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="ai">IA & Creative Tech</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="product">Product & Hardware</button>
-      <button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="data">Data & Software</button>
-    </div>
-
-     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"           
-           data-category="ai"
-           data-title="LAF"
-           data-tags="CNN,Autoencorder,Transformers,VLM,UI/UX"
-           
-           data-desc="pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents."
-           data-full-desc="<strong>Pilotage autonome d'un projet R&D</strong> : cadrage, planification des itérations et suivi des livrables.
-           <strong>Conception et développement</strong> d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications documentaires.
-           <strong>Déploiement</strong> d'une démonstration web full-stack (FastAPI) en local et export ONNX.
-           <strong>Prise de décision technique argumentée</strong>, appuyée sur des expérimentations comparatives."
-           data-image="assets/Image Aerow.png">
-        <div class="h-48 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Aerow.png" alt="AI Agents" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Lutte Anti-fraude</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Outil IA de <strong>détection de fraude documentaire</strong></p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">CNN</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Autoencoder</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Transformers</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">VLM</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"           
-           data-category="ai"
-           data-title="Rédacteur Multi-Agents LLM"
-           data-tags="NLP,LLM,WebLLM,Transformers.js, UI/UX"
-           data-github="https://github.com/Clarafadda/LLM-Research-Assistant/" 
-           data-demo="https://clarafadda.github.io/LLM-Research-Assistant/"
-           data-desc="Architecture autonome pour la rédaction de revues de littérature scientifique."
-           data-full-desc="<strong>Conception et développement</strong> d'une architecture multi-agents (LLM) pour automatiser l'analyse de la littérature scientifique et des documents.
-           Mise en œuvre d'un système de <strong>génération augmentée par récupération (RAG)</strong> afin de produire des réponses fondées exclusivement sur les documents PDF fournis.
-           <strong>Conception d'un assistant de recherche</strong> accessible directement depuis le navigateur."
-           data-image="assets/Image Agent LLM 2.png">
-        <div class="h-48 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Agent LLM 2.png" alt="AI Agents" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Rédacteur Multi-Agents LLM</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Assistant de recherche IA <strong>entièrement basé sur navigateur</strong> pour la rédaction d'états de l'art.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">NLP</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">LLM</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebLLM</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Transformer.js</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="ai"
-           data-title="Classification de chiffres – DL"
-           data-tags="Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU"
-           data-github="https://github.com/Clarafadda/TinyGrad_MNIST_Classifier"
-           data-demo="https://clarafadda.github.io/TinyGrad_MNIST_Classifier/"
-           data-desc="Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU."
-           data-full-desc="<strong>Développement d'une application web</strong> de reconnaissance de chiffres manuscrits en temps réel avec TinyGrad et WebGPU.
-           Entraînement et comparaison de réseaux de neurones <strong>MLP et CNN</strong> sur le jeu de données MNIST.
-           Réalisation d'une <strong>étude comparative des hyperparamètres</strong> pour identifier les configurations les plus performantes."
-           data-image="assets/Image Classifier.png">
-        <div class="h-48 bg-gray-900 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Classifier.png" alt="MNIST Digits" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Classification de chiffres - DL</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Reconnaissance de chiffres manuscrits <strong>en temps réel</strong> par deep learning et déploiement avec WebGPU.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Deep Learning</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">MLP</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">CNN</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Tinygrad</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="ai"
-           data-title="Éditeur de Scènes 3D"
-           data-tags="Computer Graphics,WGSL,Shaders,WebGPU, UI/UX"
-           data-github="https://github.com/Clarafadda/Ray_Marching_Editor"
-           data-demo="https://clarafadda.github.io/Ray_Marching_Editor/"
-           data-desc="Moteur de rendu et éditeur interactif basé sur le Raymarching."
-           data-full-desc="<strong>Conception d'un éditeur de scènes 3D interactif</strong> basé sur WebGPU.
-           Implémentation du <strong>ray marching</strong> et de fonctions de distance signée (SDF) pour le rendu procédural en temps réel.
-           Développement d'une interface permettant de créer des scènes à partir de primitives 3D et de modifier simultanément le code shader WGSL."
-           data-image="assets/Image Raymarching.png">
-        <div class="h-48 bg-gray-800 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Raymarching.png" alt="3D Graphics" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Éditeur de Scènes 3D</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Éditeur de scène 3D <strong>interactif</strong> par ray marching, avec une interface de configuration des objets.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Computer Graphics</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WGSL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="product"
-           data-title="Campagne Kickstarter"
-           data-tags="Crowdfunding,Design Produit,Marketing,Logistique"
-           data-demo="https://www.kickstarter.com/projects/orika/orika?ref=user_menu"
-           data-desc="Lancement d'un portefeuille origami en cuir français."
-           data-full-desc="<strong>Pilotage du lancement d'un produit</strong>, de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne de financement participatif sur Kickstarter.
-           <strong>Coordination des étapes de conception, de communication et de lancement</strong>.
-           Campagne lancée en avril 2026 : <strong>351 % de l'objectif de financement atteint</strong>.
-           Suivi de la <strong>production et de la logistique d'expédition</strong> aux contributeurs."
-           data-image="assets/Image Kickstarter.png">
-        <div class="h-48 bg-orange-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image Kickstarter.png" alt="Leather Wallet" class="project-image group-hover:scale-110 transition-transform duration-500">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Campagne Kickstarter</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2"><strong>Gestion de projet de bout en bout</strong> pour le lancement d'un portefeuille origami en cuir français.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Crowdfunding</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Design Produit</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Marketing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="data"
-           data-title="Prediction des prix Airbnb"
-           data-tags="Data,Python,Pandas, Seaborn, Matplotlib,Scikit-Learn"
-           data-desc="Modèle prédictif pour l'estimation des prix de location."
-           data-full-desc="<strong>Conduite d'un projet de Data Science</strong> à partir d'un jeu de données Airbnb : nettoyage, traitement et analyse exploratoire.
-           Identification des corrélations et entraînement de modèles de Machine Learning (<strong>Random Forest et XGBoost</strong>).
-           Exploitation des résultats pour <strong>estimer le prix optimal d'une nuit</strong> selon les caractéristiques du logement."
-           data-docs="assets/Projet_ADD_Clara_FADDA_Lucas_STALTER-3.ipynb"
-           data-image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80">
-        <div class="h-48 bg-red-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Data Analysis" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Prediction des prix Airbnb</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Modèle prédictif entraîné sur une base de données pour <strong>estimer les prix de location</strong>.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Data</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Python</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Pandas</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Seaborn</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Scikit-Learn</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="data"
-           data-title="Logistique TransConnect"
-           data-tags="C#,SQL,POO,Algorithmes,Graphes"
-           data-desc="Logiciel d'optimisation de trajets de livraison."
-           data-docs="assets/Rapport transconnect.pdf"
-           data-full-desc="<strong>Conception et développement d'une application desktop</strong> en C# pour une entreprise de logistique fictive.
-           Modélisation des itinéraires avec la théorie des graphes et les algorithmes de <strong>Dijkstra et Floyd-Warshall</strong> afin d'optimiser les trajets et l'affectation des ressources.
-           Création d'une <strong>base de données SQL</strong> pour centraliser les clients, commandes et livraisons."
-           data-image="assets/Image transconnect.jpg">
-        <div class="h-48 bg-blue-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="assets/Image transconnect.jpg" alt="Logistics" class="project-image group-hover:scale-110 transition-transform duration-500">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Logistique TransConnect</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Logiciel d'<strong>optimisation logistique</strong> des trajets de livraison grâce à la théorie des graphes.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">C#</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">SQL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">POO</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Algorithmes</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Graphes</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="data"
-           data-title="Gestion BDD - Magasin Vélo"
-           data-tags="SQL,C#,Base de données"
-           data-desc="Architecture SQL et application de gestion commerciale."
-           data-full-desc="<strong>Conception du schéma relationnel</strong> d'une base de données pour un magasin de sport.
-           Développement d'une interface manager en C# pour la <strong>gestion des stocks</strong>, le <strong>suivi des commandes clients</strong> et l'analyse du chiffre d'affaires à l'aide de requêtes SQL."
-           data-image="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&q=80">
-        <div class="h-48 bg-teal-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&q=80" alt="Database" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Gestion BDD - Magasin Vélo</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Architecture SQL et application C# pour la <strong>gestion commerciale</strong> d'un magasin fictif.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">C#</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">SQL</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Base de Données</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal"
-           data-category="product"
-           data-title="Design & Conception"
-           data-tags="Design,Électronique, Hardware,Arduino,Soudure,3D"
-           data-desc="Série de projets hardware et DIY."
-           data-full-desc="Réalisation d'une série de <strong>prototypes fonctionnels</strong> dans le cadre du cours « How to Make Almost Anything » : conception d'une montre connectée pour coureurs, assemblage et soudure d'une console Gameboy, conception et impression 3D d'une flûte de pan, et modification électronique d'un signal vidéo (VGAX)."
-           data-docs='[{"url":"https://oil-giraffe-c54.notion.site/Documentation-HMAA-2nd-workshop-294bf791352280d5ad24d0cfab967bf9","label":"Documentation Modélisation & Impression 3D"},{"url":"https://bow-chalk-0b1.notion.site/HMAA-Week-3-Process-images-2dfcb55dd23580b585add97a6f65caca","label":"Documentation PCB & VGAx"}]'
-           data-image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80">
-        <div class="h-48 bg-green-50 relative border-b border-gray-100 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="DIY Electronics" class="project-image w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-marine">Design & Conception</h3>
-          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Série de projets de <strong>conception et prototypage hardware</strong> : Gameboy, VGAX et impression 3D.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Électronique</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Hardware</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Arduino</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Soudure</span>
-            <span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">3D</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<section class="py-24 px-6 bg-white scroll-mt-32" id="projets">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl font-bold text-marine mb-4">Projets Réalisés</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
+<button class="filter-btn active px-6 py-2 rounded-full border border-marine bg-marine text-white transition-all shadow-md hover:shadow-lg" data-filter="all">Tous</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="ai">IA &amp; Creative Tech</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="product">Product &amp; Hardware</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-marine text-marine hover:bg-marine hover:text-white transition-all shadow-sm hover:shadow-md" data-filter="data">Data &amp; Software</button>
+</div>
+<div class="mb-16" data-project-group="featured"><h3 class="text-2xl font-bold text-marine mb-6" data-project-section-title="featured">Projets majeurs</h3><div class="grid md:grid-cols-2 gap-8"><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal shadow-md border-2 border-poudre" data-category="ai" data-desc="pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents." data-full-desc="&lt;strong&gt;Pilotage autonome d'un projet R&amp;D&lt;/strong&gt; : cadrage, planification des itérations et suivi des livrables.
+           &lt;strong&gt;Conception et développement&lt;/strong&gt; d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications documentaires.
+           &lt;strong&gt;Déploiement&lt;/strong&gt; d'une démonstration web full-stack (FastAPI) en local et export ONNX.
+           &lt;strong&gt;Prise de décision technique argumentée&lt;/strong&gt;, appuyée sur des expérimentations comparatives." data-image="assets/Image Aerow.png" data-tags="CNN,Autoencorder,Transformers,VLM,UI/UX" data-title="LAF">
+<div class="h-64 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="AI Agents" class="project-image w-full h-full object-cover" src="assets/Image Aerow.png"/>
+</div>
+<div class="p-7">
+<h3 class="text-2xl font-bold mb-2 text-marine">Lutte Anti-fraude</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Outil IA de <strong>détection de fraude documentaire</strong></p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">CNN</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Autoencoder</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Transformers</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">VLM</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal shadow-md border-2 border-poudre" data-category="ai" data-demo="https://clarafadda.github.io/LLM-Research-Assistant/" data-desc="Architecture autonome pour la rédaction de revues de littérature scientifique." data-full-desc="&lt;strong&gt;Conception et développement&lt;/strong&gt; d'une architecture multi-agents (LLM) pour automatiser l'analyse de la littérature scientifique et des documents.
+           Mise en œuvre d'un système de &lt;strong&gt;génération augmentée par récupération (RAG)&lt;/strong&gt; afin de produire des réponses fondées exclusivement sur les documents PDF fournis.
+           &lt;strong&gt;Conception d'un assistant de recherche&lt;/strong&gt; accessible directement depuis le navigateur." data-github="https://github.com/Clarafadda/LLM-Research-Assistant/" data-image="assets/Image Agent LLM 2.png" data-tags="NLP,LLM,WebLLM,Transformers.js, UI/UX" data-title="Rédacteur Multi-Agents LLM">
+<div class="h-64 bg-purple-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="AI Agents" class="project-image w-full h-full object-cover" src="assets/Image Agent LLM 2.png"/>
+</div>
+<div class="p-7">
+<h3 class="text-2xl font-bold mb-2 text-marine">Rédacteur Multi-Agents LLM</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Assistant de recherche IA <strong>entièrement basé sur navigateur</strong> pour la rédaction d'états de l'art.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">NLP</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">LLM</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebLLM</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Transformer.js</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal shadow-md border-2 border-poudre" data-category="ai" data-demo="https://clarafadda.github.io/Ray_Marching_Editor/" data-desc="Moteur de rendu et éditeur interactif basé sur le Raymarching." data-full-desc="&lt;strong&gt;Conception d'un éditeur de scènes 3D interactif&lt;/strong&gt; basé sur WebGPU.
+           Implémentation du &lt;strong&gt;ray marching&lt;/strong&gt; et de fonctions de distance signée (SDF) pour le rendu procédural en temps réel.
+           Développement d'une interface permettant de créer des scènes à partir de primitives 3D et de modifier simultanément le code shader WGSL." data-github="https://github.com/Clarafadda/Ray_Marching_Editor" data-image="assets/Image Raymarching.png" data-tags="Computer Graphics,WGSL,Shaders,WebGPU, UI/UX" data-title="Éditeur de Scènes 3D">
+<div class="h-64 bg-gray-800 relative border-b border-gray-100 overflow-hidden">
+<img alt="3D Graphics" class="project-image w-full h-full object-cover" src="assets/Image Raymarching.png"/>
+</div>
+<div class="p-7">
+<h3 class="text-2xl font-bold mb-2 text-marine">Éditeur de Scènes 3D</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Éditeur de scène 3D <strong>interactif</strong> par ray marching, avec une interface de configuration des objets.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Computer Graphics</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WGSL</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">UI/UX</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal shadow-md border-2 border-poudre" data-category="product" data-demo="https://www.kickstarter.com/projects/orika/orika?ref=user_menu" data-desc="Lancement d'un portefeuille origami en cuir français." data-full-desc="&lt;strong&gt;Pilotage du lancement d'un produit&lt;/strong&gt;, de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne de financement participatif sur Kickstarter.
+           &lt;strong&gt;Coordination des étapes de conception, de communication et de lancement&lt;/strong&gt;.
+           Campagne lancée en avril 2026 : &lt;strong&gt;351 % de l'objectif de financement atteint&lt;/strong&gt;.
+           Suivi de la &lt;strong&gt;production et de la logistique d'expédition&lt;/strong&gt; aux contributeurs." data-image="assets/Image Kickstarter.png" data-tags="Crowdfunding,Design Produit,Marketing,Logistique" data-title="ORIKA — Campagne Kickstarter">
+<div class="h-64 bg-orange-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="Leather Wallet" class="project-image group-hover:scale-110 transition-transform duration-500" src="assets/Image Kickstarter.png"/>
+</div>
+<div class="p-7">
+<h3 class="text-2xl font-bold mb-2 text-marine">ORIKA — Campagne Kickstarter</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2"><strong>Gestion de projet de bout en bout</strong> pour le lancement d'un portefeuille origami en cuir français.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Crowdfunding</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Design Produit</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Marketing</span>
+</div>
+</div>
+</div></div></div><div data-project-group="secondary"><h3 class="text-xl font-bold text-marine mb-6" data-project-section-title="secondary">Autres projets</h3><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal" data-category="ai" data-demo="https://clarafadda.github.io/TinyGrad_MNIST_Classifier/" data-desc="Reconnaissance de chiffres manuscrits temps réel accélérée par WebGPU." data-full-desc="&lt;strong&gt;Développement d'une application web&lt;/strong&gt; de reconnaissance de chiffres manuscrits en temps réel avec TinyGrad et WebGPU.
+           Entraînement et comparaison de réseaux de neurones &lt;strong&gt;MLP et CNN&lt;/strong&gt; sur le jeu de données MNIST.
+           Réalisation d'une &lt;strong&gt;étude comparative des hyperparamètres&lt;/strong&gt; pour identifier les configurations les plus performantes." data-github="https://github.com/Clarafadda/TinyGrad_MNIST_Classifier" data-image="assets/Image Classifier.png" data-tags="Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU" data-title="Classification de chiffres – DL">
+<div class="h-36 bg-gray-900 relative border-b border-gray-100 overflow-hidden">
+<img alt="MNIST Digits" class="project-image w-full h-full object-cover" src="assets/Image Classifier.png"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-2 text-marine">Classification de chiffres - DL</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Reconnaissance de chiffres manuscrits <strong>en temps réel</strong> par deep learning et déploiement avec WebGPU.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Deep Learning</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">MLP</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">CNN</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Tinygrad</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">WebGPU</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal" data-category="data" data-desc="Modèle prédictif pour l'estimation des prix de location." data-docs="assets/Projet_ADD_Clara_FADDA_Lucas_STALTER-3.ipynb" data-full-desc="&lt;strong&gt;Conduite d'un projet de Data Science&lt;/strong&gt; à partir d'un jeu de données Airbnb : nettoyage, traitement et analyse exploratoire.
+           Identification des corrélations et entraînement de modèles de Machine Learning (&lt;strong&gt;Random Forest et XGBoost&lt;/strong&gt;).
+           Exploitation des résultats pour &lt;strong&gt;estimer le prix optimal d'une nuit&lt;/strong&gt; selon les caractéristiques du logement." data-image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&amp;q=80" data-tags="Data,Python,Pandas, Seaborn, Matplotlib,Scikit-Learn" data-title="Prediction des prix Airbnb">
+<div class="h-36 bg-red-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="Data Analysis" class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-2 text-marine">Prediction des prix Airbnb</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Modèle prédictif entraîné sur une base de données pour <strong>estimer les prix de location</strong>.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Data</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Python</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Pandas</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Seaborn</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Scikit-Learn</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal" data-category="data" data-desc="Logiciel d'optimisation de trajets de livraison." data-docs="assets/Rapport transconnect.pdf" data-full-desc="&lt;strong&gt;Conception et développement d'une application desktop&lt;/strong&gt; en C# pour une entreprise de logistique fictive.
+           Modélisation des itinéraires avec la théorie des graphes et les algorithmes de &lt;strong&gt;Dijkstra et Floyd-Warshall&lt;/strong&gt; afin d'optimiser les trajets et l'affectation des ressources.
+           Création d'une &lt;strong&gt;base de données SQL&lt;/strong&gt; pour centraliser les clients, commandes et livraisons." data-image="assets/Image transconnect.jpg" data-tags="C#,SQL,POO,Algorithmes,Graphes" data-title="Logistique TransConnect">
+<div class="h-36 bg-blue-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="Logistics" class="project-image group-hover:scale-110 transition-transform duration-500" src="assets/Image transconnect.jpg"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-2 text-marine">Logistique TransConnect</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Logiciel d'<strong>optimisation logistique</strong> des trajets de livraison grâce à la théorie des graphes.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">C#</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">SQL</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">POO</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Algorithmes</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Graphes</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal" data-category="data" data-desc="Architecture SQL et application de gestion commerciale." data-full-desc="&lt;strong&gt;Conception du schéma relationnel&lt;/strong&gt; d'une base de données pour un magasin de sport.
+           Développement d'une interface manager en C# pour la &lt;strong&gt;gestion des stocks&lt;/strong&gt;, le &lt;strong&gt;suivi des commandes clients&lt;/strong&gt; et l'analyse du chiffre d'affaires à l'aide de requêtes SQL." data-image="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&amp;q=80" data-tags="SQL,C#,Base de données" data-title="Gestion BDD - Magasin Vélo">
+<div class="h-36 bg-teal-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="Database" class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-2 text-marine">Gestion BDD - Magasin Vélo</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Architecture SQL et application C# pour la <strong>gestion commerciale</strong> d'un magasin fictif.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">C#</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">SQL</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Base de Données</span>
+</div>
+</div>
+</div><div class="project-card group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 reveal" data-category="product" data-desc="Série de projets hardware et DIY." data-docs='[{"url":"https://oil-giraffe-c54.notion.site/Documentation-HMAA-2nd-workshop-294bf791352280d5ad24d0cfab967bf9","label":"Documentation Modélisation &amp; Impression 3D"},{"url":"https://bow-chalk-0b1.notion.site/HMAA-Week-3-Process-images-2dfcb55dd23580b585add97a6f65caca","label":"Documentation PCB &amp; VGAx"}]' data-full-desc="Réalisation d'une série de &lt;strong&gt;prototypes fonctionnels&lt;/strong&gt; dans le cadre du cours « How to Make Almost Anything » : conception d'une montre connectée pour coureurs, assemblage et soudure d'une console Gameboy, conception et impression 3D d'une flûte de pan, et modification électronique d'un signal vidéo (VGAX)." data-image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&amp;q=80" data-tags="Design,Électronique, Hardware,Arduino,Soudure,3D" data-title="Design &amp; Conception">
+<div class="h-36 bg-green-50 relative border-b border-gray-100 overflow-hidden">
+<img alt="DIY Electronics" class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&amp;q=80"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-2 text-marine">Design &amp; Conception</h3>
+<p class="text-gray-600 text-sm mb-4 line-clamp-2">Série de projets de <strong>conception et prototypage hardware</strong> : Gameboy, VGAX et impression 3D.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Électronique</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Hardware</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Arduino</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">Soudure</span>
+<span class="text-xs bg-poudre text-marine px-2 py-1 rounded font-medium">3D</span>
+</div>
+</div>
+</div></div></div>
+</div>
 </section>
 
 <!-- Modal agrandie -->
@@ -714,6 +628,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           card.style.display = 'none';
         }
+      });
+      document.querySelectorAll('[data-project-group]').forEach(group => {
+        const hasVisibleCard = Array.from(group.querySelectorAll('.project-card'))
+          .some(card => card.style.display !== 'none');
+        group.style.display = hasVisibleCard ? '' : 'none';
       });
     });
   });

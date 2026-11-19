@@ -87,6 +87,8 @@ const translations = {
     // Projets Section
     projets: {
       title: "Projets Réalisés",
+      featuredTitle: "Projets majeurs",
+      secondaryTitle: "Autres projets",
       filters: {
         all: "Tous",
         ai: "IA & Creative Tech",
@@ -119,7 +121,7 @@ const translations = {
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
         kickstarter: {
-          title: "Campagne Kickstarter",
+          title: "ORIKA — Campagne Kickstarter",
           desc: "<strong>Gestion de projet de bout en bout</strong> pour le lancement d'un portefeuille origami en cuir français.",
           fullDesc: "<strong>Pilotage du lancement d'un produit</strong>, de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne de financement participatif sur Kickstarter. <strong>Coordination des étapes de conception, de communication et de lancement</strong>. Campagne lancée en avril 2026 : <strong>351 % de l'objectif de financement atteint</strong>. Suivi de la <strong>production et de la logistique d'expédition</strong> aux contributeurs.",
           tags: "Crowdfunding,Design Produit,Marketing,Logistique"
@@ -354,6 +356,8 @@ const translations = {
     // Projets Section
     projets: {
       title: "Completed Projects",
+      featuredTitle: "Featured Projects",
+      secondaryTitle: "Other Projects",
       filters: {
         all: "All",
         ai: "AI & Creative Tech",
@@ -386,7 +390,7 @@ const translations = {
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
         kickstarter: {
-          title: "Kickstarter Campaign",
+          title: "ORIKA — Kickstarter Campaign",
           desc: "<strong>End-to-end project management</strong> for the launch of a French leather origami wallet.",
           fullDesc: "<strong>Product launch coordination</strong>, from designing a minimalist folded leather wallet (origami) to the Kickstarter crowdfunding campaign. <strong>Coordination of design, communication and launch activities</strong>. Campaign launched in April 2026: <strong>351% of the funding goal reached</strong>. Follow-up of <strong>production and shipping logistics</strong> to backers.",
           tags: "Crowdfunding,Product Design,Marketing,Logistics"
@@ -558,7 +562,7 @@ function setLanguage(lang) {
   const heroTitle = document.querySelector('#accueil h1');
   if (heroTitle) heroTitle.textContent = t.hero.name;
   
-  const heroSubtitle = document.querySelector('#accueil p.text-xl');
+  const heroSubtitle = document.querySelector('#accueil h1 + p');
   if (heroSubtitle) heroSubtitle.textContent = t.hero.title;
   
   const heroDesc = document.querySelector('#accueil p.text-gray-700.mb-8');
@@ -598,6 +602,10 @@ function setLanguage(lang) {
   // Projets
   const projetsTitle = document.querySelector('#projets h2');
   if (projetsTitle) projetsTitle.textContent = t.projets.title;
+    const featuredTitle = document.querySelector('[data-project-section-title="featured"]');
+  const secondaryTitle = document.querySelector('[data-project-section-title="secondary"]');
+  if (featuredTitle) featuredTitle.textContent = t.projets.featuredTitle;
+  if (secondaryTitle) secondaryTitle.textContent = t.projets.secondaryTitle;
   
   const filterBtns = document.querySelectorAll('.filter-btn');
   if (filterBtns[0]) filterBtns[0].textContent = t.projets.filters.all;
@@ -606,7 +614,7 @@ function setLanguage(lang) {
   if (filterBtns[3]) filterBtns[3].textContent = t.projets.filters.data;
   
   const projectCards = document.querySelectorAll('.project-card');
-  const projectKeys = ['LAF','llm', 'classifier', 'raymarching', 'kickstarter', 'airbnb', 'transconnect', 'velo', 'hardware'];
+  const projectKeys = ['LAF', 'llm', 'raymarching', 'kickstarter', 'classifier', 'airbnb', 'transconnect', 'velo', 'hardware'];
   
   projectCards.forEach((card, index) => {
     const key = projectKeys[index];
