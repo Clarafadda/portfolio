@@ -96,56 +96,56 @@ const translations = {
       items: {
         LAF: {
           title: "Lutte Anti-fraude",
-          desc: "Outil IA de détection de fraude documentaire",
-          fullDesc: "Pilotage autonome d'un projet R&D (cadrage, itérations, livrables). Conception et développement d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications sur documents. Déploiement d'une démo web full-stack (FastAPI) en local et export ONNX. Prise de décision technique argumentée, appuyée sur des expérimentations comparatives.",
+          desc: "Outil IA de <strong>détection de fraude documentaire</strong>",
+          fullDesc: "<strong>Pilotage autonome d'un projet R&D</strong> : cadrage, planification des itérations et suivi des livrables. <strong>Conception et développement</strong> d'un pipeline deep learning (CNN, segmentation, Transformer, VLM) pour la détection de falsifications documentaires. <strong>Déploiement</strong> d'une démonstration web full-stack (FastAPI) en local et export ONNX. <strong>Prise de décision technique argumentée</strong>, appuyée sur des expérimentations comparatives.",
           tags: "CNN,Autoencoder,Transformers,VLM,UI/UX"
         },
         llm: {
           title: "Rédacteur Multi-Agents LLM",
-          desc: "Assistant de recherche IA entièrement basé sur navigateur pour la rédaction d'états de l'art.",
-          fullDesc: "Développement d'une architecture complexe utilisant plusieurs agents autonomes (LLM) conçu pour l'analyse automatisée de la littérature et des documents. Cette application utilise la génération augmentée par la récupération (RAG) pour fournir des réponses basées exclusivement sur les documents PDF téléchargés.",
+          desc: "Assistant de recherche IA <strong>entièrement basé sur navigateur</strong> pour la rédaction d'états de l'art.",
+          fullDesc: "<strong>Conception et développement</strong> d'une architecture multi-agents (LLM) pour automatiser l'analyse de la littérature scientifique et des documents. Mise en œuvre d'un système de <strong>génération augmentée par récupération (RAG)</strong> afin de produire des réponses fondées exclusivement sur les documents PDF fournis. <strong>Conception d'un assistant de recherche</strong> accessible directement depuis le navigateur.",
           tags: "NLP,LLM,WebLLM,Transformers.js,UI/UX"
         },
         classifier: {
           title: "Classification de chiffres — DL",
-          desc: "Reconnaissance de chiffres manuscrits en temps réel par deep learning et déploiement avec WebGPU.",
-          fullDesc: "Ce projet permet la reconnaissance en temps réel de chiffres manuscrits à l'aide de TinyGrad, un framework de deep learning (DL), et le déploie sous forme d'application web basée sur WebGPU. Tinygrad est entraîné avec un réseau de neurone MLP et CNN sur l'ensemble de données MNIST. Une étude des hyperparamètres a été réalisée pour déterminer les plus performants.",
+          desc: "Reconnaissance de chiffres manuscrits <strong>en temps réel</strong> par deep learning et déploiement avec WebGPU.",
+          fullDesc: "<strong>Développement d'une application web</strong> de reconnaissance de chiffres manuscrits en temps réel avec TinyGrad et WebGPU. Entraînement et comparaison de réseaux de neurones <strong>MLP et CNN</strong> sur le jeu de données MNIST. Réalisation d'une <strong>étude comparative des hyperparamètres</strong> pour identifier les configurations les plus performantes.",
           tags: "Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU"
         },
         raymarching: {
           title: "Éditeur de Scènes 3D",
-          desc: "Éditeur de scène 3D interactif par ray marching, avec une interface de configuration des objets.",
-          fullDesc: "Ce projet est un éditeur de scène 3D interactif basé sur WebGPU, utilisant le ray marching et des fonctions de distance signée (SDF) pour le rendu procédural en temps réel. Il permet la création de scènes à partir de primitives 3D (comme des sphères, des boîtes, etc.) et la modification simultanée du code shader WGSL.",
+          desc: "Éditeur de scène 3D <strong>interactif</strong> par ray marching, avec une interface de configuration des objets.",
+          fullDesc: "<strong>Conception d'un éditeur de scènes 3D interactif</strong> basé sur WebGPU. Implémentation du <strong>ray marching</strong> et de fonctions de distance signée (SDF) pour le rendu procédural en temps réel. Développement d'une interface permettant de créer des scènes à partir de primitives 3D et de modifier simultanément le code shader WGSL.",
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
         kickstarter: {
           title: "Campagne Kickstarter",
-          desc: "Gestion de projet complète pour le lancement d'un produit : un portefeuille origami en cuir français.",
-          fullDesc: "Gestion de projet complète pour le lancement d'un produit : de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne marketing sur Kickstarter. La campagne a été lancée en Avril 2026 et a atteint un objectif de 351%. Nous gérerons entièrement la production et la logistique d'expédition aux contributeurs.",
+          desc: "<strong>Gestion de projet de bout en bout</strong> pour le lancement d'un portefeuille origami en cuir français.",
+          fullDesc: "<strong>Pilotage du lancement d'un produit</strong>, de la conception d'un portefeuille minimaliste en cuir plié (origami) à la campagne de financement participatif sur Kickstarter. <strong>Coordination des étapes de conception, de communication et de lancement</strong>. Campagne lancée en avril 2026 : <strong>351 % de l'objectif de financement atteint</strong>. Suivi de la <strong>production et de la logistique d'expédition</strong> aux contributeurs.",
           tags: "Crowdfunding,Design Produit,Marketing,Logistique"
         },
         airbnb: {
           title: "Prediction des prix Airbnb",
-          desc: "Modèle prédictif entraîné sur une base de données pour l'estimation des prix de location.",
-          fullDesc: "Projet complet de Data Science : nettoyage d'un jeu de données brut Airbnb, analyse exploratoire pour identifier les corrélations, traitement des données et entraînement de modèles de Machine Learning (Random Forest, XGBoost) pour prédire le prix optimal d'une nuit selon les caractéristiques du logement.",
+          desc: "Modèle prédictif entraîné sur une base de données pour <strong>estimer les prix de location</strong>.",
+          fullDesc: "<strong>Conduite d'un projet de Data Science</strong> à partir d'un jeu de données Airbnb : nettoyage, traitement et analyse exploratoire. Identification des corrélations et entraînement de modèles de Machine Learning (<strong>Random Forest et XGBoost</strong>). Exploitation des résultats pour <strong>estimer le prix optimal d'une nuit</strong> selon les caractéristiques du logement.",
           tags: "Data,Python,Pandas,Seaborn,Matplotlib,Scikit-Learn"
         },
         transconnect: {
           title: "Logistique TransConnect",
-          desc: "Logiciel d'optimisation de logistique de livraison. Utilisation des graphes pour l'optimisation des trajets.",
-          fullDesc: "Développement d'une application desktop en C# pour une entreprise de logistique fictive. Le cœur du projet réside dans l'utilisation de la théorie des graphes (Algorithmes de Dijkstra et Floyd-Warshall) pour calculer les itinéraires les plus courts et optimiser la flotte de camions et de chauffeurs. Utilisation de la POO pour répartir les chauffeur et les différents types de camions. Création d'une base de données pour référencer les clients, commandes et livraisons.",
+          desc: "Logiciel d'<strong>optimisation logistique</strong> des trajets de livraison grâce à la théorie des graphes.",
+          fullDesc: "<strong>Conception et développement d'une application desktop</strong> en C# pour une entreprise de logistique fictive. Modélisation des itinéraires avec la théorie des graphes et les algorithmes de <strong>Dijkstra et Floyd-Warshall</strong> afin d'optimiser les trajets et l'affectation des ressources. Création d'une <strong>base de données SQL</strong> pour centraliser les clients, commandes et livraisons.",
           tags: "C#,SQL,POO,Algorithmes,Graphes"
         },
         velo: {
           title: "Gestion BDD - Magasin Vélo",
-          desc: "Architecture SQL et application C# de gestion commerciale pour un magasin fictif.",
-          fullDesc: "Conception du schéma relationnel pour un magasin de sport fictif. Développement d'une interface manager en C# permettant la gestion des stocks en temps réel, le suivi des commandes clients et l'analyse du chiffre d'affaires via des requêtes SQL.",
+          desc: "Architecture SQL et application C# pour la <strong>gestion commerciale</strong> d'un magasin fictif.",
+          fullDesc: "<strong>Conception du schéma relationnel</strong> d'une base de données pour un magasin de sport. Développement d'une interface manager en C# pour la <strong>gestion des stocks</strong>, le <strong>suivi des commandes clients</strong> et l'analyse du chiffre d'affaires à l'aide de requêtes SQL.",
           tags: "SQL,C#,Base de données"
         },
         hardware: {
           title: "Design & Conception",
-          desc: "Série de projets hardware : Gameboy, VGAX, Design & Impression 3D.",
-          fullDesc: "Dans le cadre du cours 'How to Make Almost Anything', réalisation d'une série de prototypes fonctionnels : conception d'une montre intelligente pour les coureurs, assemblage et soudure d'une console Gameboy, conception d'une flûte de pan designée et imprimée en 3D, et modification d'un signal vidéo (VGAX) via électronique.",
+          desc: "Série de projets de <strong>conception et prototypage hardware</strong> : Gameboy, VGAX et impression 3D.",
+          fullDesc: "Réalisation d'une série de <strong>prototypes fonctionnels</strong> dans le cadre du cours « How to Make Almost Anything » : conception d'une montre connectée pour coureurs, assemblage et soudure d'une console Gameboy, conception et impression 3D d'une flûte de pan, et modification électronique d'un signal vidéo (VGAX).",
           tags: "Design,Électronique,Hardware,Arduino,3D"
         }
       },
@@ -178,8 +178,9 @@ const translations = {
         project: {
           title: "Gestion de Projet",
           subcategories: {
-            management: "Management",
-            tools: "Outils"
+            management: "Pilotage de projet & produit",
+            organization: "Management & organisation",
+            tools: "Outils collaboratifs & techniques"
           }
         },
         languages: {
@@ -233,6 +234,12 @@ const translations = {
         "Gestion d'équipe.": "Gestion d'équipe.",
         "Gestion d'évènements": "Gestion d'évènements",
         "Sponsoring": "Sponsoring",
+        "Cadrage de projet": "Cadrage de projet",
+        "Planification & suivi": "Planification & suivi",
+        "Coordination": "Coordination",
+        "Analyse des besoins": "Analyse des besoins",
+        "Prototypage & itération": "Prototypage & itération",
+        "Suivi des livrables": "Suivi des livrables",
         // Tools
         "Git / GitHub / GitHub pages": "Git / GitHub / GitHub pages",
         "VS Code": "VS Code",
@@ -356,56 +363,56 @@ const translations = {
       items: {
         LAF: {
           title: "Anti-fraud Project",
-          desc: "AI Tool for Document Fraud Detection",
-          fullDesc: "Autonomous leadership of an R&D project (scoping, iterations, deliverables). Design and development of a deep learning pipeline (CNN, segmentation, Transformer, VLM) for document forgery detection. Deployment of a full-stack web demo (FastAPI) locally and ONNX export. Technical decision-making backed by comparative experiments.",
+          desc: "AI tool for <strong>document fraud detection</strong>",
+          fullDesc: "<strong>Autonomous leadership of an R&D project</strong>: scoping, iteration planning and deliverable tracking. <strong>Design and development</strong> of a deep learning pipeline (CNN, segmentation, Transformer, VLM) for document forgery detection. <strong>Deployment</strong> of a full-stack web demo (FastAPI) locally, with ONNX export. <strong>Evidence-based technical decisions</strong> supported by comparative experiments.",
           tags: "CNN,Autoencoder,Transformers,VLM,UI/UX"
         },
         llm: {
           title: "Multi-Agent LLM Writer",
           desc: "Browser-based AI research assistant for writing state-of-the-art reviews.",
-          fullDesc: "Development of a complex architecture using multiple autonomous agents (LLM) designed for automated literature and document analysis. This application uses Retrieval-Augmented Generation (RAG) to provide responses based exclusively on uploaded PDF documents.",
+          fullDesc: "<strong>Design and development</strong> of a multi-agent LLM architecture to automate scientific literature and document analysis. Implementation of <strong>Retrieval-Augmented Generation (RAG)</strong> to generate answers grounded exclusively in the supplied PDF documents. <strong>Design of a browser-based research assistant</strong>.",
           tags: "NLP,LLM,WebLLM,Transformers.js,UI/UX"
         },
         classifier: {
           title: "Digit Classification — DL",
           desc: "Real-time handwritten digit recognition through deep learning and WebGPU deployment.",
-          fullDesc: "This project enables real-time recognition of handwritten digits using TinyGrad, a deep learning (DL) framework, and deploys it as a WebGPU-based web application. Tinygrad is trained with MLP and CNN neural networks on the MNIST dataset. A hyperparameter study was conducted to determine the most performant ones.",
+          fullDesc: "<strong>Development of a web application</strong> for real-time handwritten digit recognition using TinyGrad and WebGPU. Training and comparison of <strong>MLP and CNN neural networks</strong> on the MNIST dataset. A <strong>comparative hyperparameter study</strong> identified the best-performing configurations.",
           tags: "Deep Learning,MLP,CNN,Python,Tinygrad,WebGPU"
         },
         raymarching: {
           title: "3D Scene Editor",
           desc: "Interactive 3D scene editor using ray marching, with object configuration interface.",
-          fullDesc: "This project is an interactive 3D scene editor based on WebGPU, using ray marching and signed distance functions (SDF) for real-time procedural rendering. It allows creation of scenes from 3D primitives (like spheres, boxes, etc.) and simultaneous modification of WGSL shader code.",
+          fullDesc: "<strong>Design of an interactive 3D scene editor</strong> based on WebGPU. Implementation of <strong>ray marching</strong> and signed distance functions (SDF) for real-time procedural rendering. Development of an interface to create scenes from 3D primitives while editing WGSL shader code.",
           tags: "Computer Graphics,WGSL,Shaders,WebGPU,UI/UX"
         },
         kickstarter: {
           title: "Kickstarter Campaign",
-          desc: "Complete project management for product launch: a French leather origami wallet.",
-          fullDesc: "Complete project management for product launch: from designing a minimalist folded leather wallet (origami) to the Kickstarter marketing campaign. The campaign has been launched in April 2026 and reached 351% of its goals. We will fully manage production and shipping logistics to backers.",
+          desc: "<strong>End-to-end project management</strong> for the launch of a French leather origami wallet.",
+          fullDesc: "<strong>Product launch coordination</strong>, from designing a minimalist folded leather wallet (origami) to the Kickstarter crowdfunding campaign. <strong>Coordination of design, communication and launch activities</strong>. Campaign launched in April 2026: <strong>351% of the funding goal reached</strong>. Follow-up of <strong>production and shipping logistics</strong> to backers.",
           tags: "Crowdfunding,Product Design,Marketing,Logistics"
         },
         airbnb: {
           title: "Airbnb Price Prediction",
           desc: "Predictive model trained on a database for rental price estimation.",
-          fullDesc: "Complete Data Science project: cleaning raw Airbnb dataset, exploratory analysis to identify correlations, data processing, and training Machine Learning models (Random Forest, XGBoost) to predict optimal nightly price based on accommodation features.",
+          fullDesc: "<strong>Delivery of a Data Science project</strong> using an Airbnb dataset: data cleaning, processing and exploratory analysis. Identification of correlations and training of Machine Learning models (<strong>Random Forest and XGBoost</strong>). Use of the results to <strong>estimate the optimal nightly price</strong> based on property features.",
           tags: "Data,Python,Pandas,Seaborn,Matplotlib,Scikit-Learn"
         },
         transconnect: {
           title: "TransConnect Logistics",
           desc: "Delivery logistics optimization software. Using graphs for route optimization.",
-          fullDesc: "Development of a C# desktop application for a fictional logistics company. The project's core lies in using graph theory (Dijkstra and Floyd-Warshall algorithms) to calculate shortest routes and optimize truck and driver fleet. Using OOP to allocate drivers and different truck types. Creating a database to reference customers, orders, and deliveries.",
+          fullDesc: "<strong>Design and development of a C# desktop application</strong> for a fictional logistics company. Route modelling using graph theory and <strong>Dijkstra and Floyd-Warshall algorithms</strong> to optimize routes and resource allocation. Creation of an <strong>SQL database</strong> to centralize customers, orders and deliveries.",
           tags: "C#,SQL,OOP,Algorithms,Graphs"
         },
         velo: {
           title: "Database Management - Bike Shop",
           desc: "SQL architecture and C# business management application for a fictional store.",
-          fullDesc: "Designing the relational schema for a fictional sports store. Development of a C# manager interface enabling real-time inventory management, customer order tracking, and revenue analysis via SQL queries.",
+          fullDesc: "<strong>Design of a relational database schema</strong> for a sports store. Development of a C# manager interface for <strong>real-time inventory management</strong>, <strong>customer order tracking</strong> and revenue analysis using SQL queries.",
           tags: "SQL,C#,Database"
         },
         hardware: {
           title: "Design & Prototyping",
           desc: "Series of hardware projects: Gameboy, VGAX, Design & 3D Printing.",
-          fullDesc: "As part of the 'How to Make Almost Anything' course, creation of a series of functional prototypes: design of a smartwatch for runners, assembly and soldering of a Gameboy console, design of a 3D-designed and printed pan flute, and modification of a video signal (VGAX) via electronics.",
+          fullDesc: "Creation of a series of <strong>functional prototypes</strong> as part of the 'How to Make Almost Anything' course: a smartwatch for runners, assembly and soldering of a Gameboy console, design and 3D printing of a pan flute, and electronic modification of a video signal (VGAX).",
           tags: "Design,Electronics,Hardware,Arduino,3D"
         }
       },
@@ -438,8 +445,9 @@ const translations = {
         project: {
           title: "Project Management",
           subcategories: {
-            management: "Management",
-            tools: "Tools"
+            management: "Project & Product Delivery",
+            organization: "Management & Organization",
+            tools: "Collaborative & Technical Tools"
           }
         },
         languages: {
@@ -493,6 +501,12 @@ const translations = {
         "Gestion d'équipe.": "Team Management",
         "Gestion d'évènements": "Event Management",
         "Sponsoring": "Sponsoring",
+        "Cadrage de projet": "Project scoping",
+        "Planification & suivi": "Planning & monitoring",
+        "Coordination": "Coordination",
+        "Analyse des besoins": "Needs analysis",
+        "Prototypage & itération": "Prototyping & iteration",
+        "Suivi des livrables": "Deliverable tracking",
         // Tools
         "Git / GitHub / GitHub pages": "Git / GitHub / GitHub pages",
         "VS Code": "VS Code",
@@ -601,7 +615,7 @@ function setLanguage(lang) {
       const cardDesc = card.querySelector('p.line-clamp-2');
       
       if (cardTitle) cardTitle.textContent = t.projets.items[key].title;
-      if (cardDesc) cardDesc.textContent = t.projets.items[key].desc;
+      if (cardDesc) cardDesc.innerHTML = t.projets.items[key].desc;
       
       // Update attributes for modal
       card.setAttribute('data-title', t.projets.items[key].title);
@@ -641,7 +655,8 @@ function setLanguage(lang) {
   if (subcatTitles[4]) subcatTitles[4].textContent = t.competences.categories.design.subcategories.cad;
   if (subcatTitles[5]) subcatTitles[5].textContent = t.competences.categories.design.subcategories.electronics;
   if (subcatTitles[6]) subcatTitles[6].textContent = t.competences.categories.project.subcategories.management;
-  if (subcatTitles[7]) subcatTitles[7].textContent = t.competences.categories.project.subcategories.tools;
+  if (subcatTitles[7]) subcatTitles[7].textContent = t.competences.categories.project.subcategories.organization;
+  if (subcatTitles[8]) subcatTitles[8].textContent = t.competences.categories.project.subcategories.tools;
   
   // --- NOUVELLE LOGIQUE POUR LES VIGNETTES COMPÉTENCES ---
   document.querySelectorAll('#competences span.px-3.py-1').forEach(skillEl => {
